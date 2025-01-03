@@ -2,41 +2,63 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        aaaaaa
+        Denis Ferreira - Portfólio
     </title>
     <link href="src/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-red-600 h-auto">
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
-    <h1>aaaaaa</h1>
-    <p>aaaaaa</p>
+<body>
 
+    <div class="bg-bgMenuTop w-full h-10 flex flex-row justify-start items-center">
+
+        <span class="flex justify-center items-center">
+            <img class="h-4 w-auto px-2" src="imgs/vscode.svg" alt="vscode">
+        </span>
+
+        <!-- Arquivo -> Baixar CV ou Visitar Github-->
+        <!-- Editar -> ? -->
+        <!-- Exibir -> Botão para mostrar/ocultar o menu lateral -->
+        <!-- Ajuda -> Atalho para contato -->
+
+        <button
+            class="hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">File</button>
+
+        <button
+            class="hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Edit</button>
+
+        <button
+            class="hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">View</button>
+
+        <button
+            class="hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Help</button>
+    </div>
+
+    <div class="flex flex-col">
+        <div class="bg-bgMenuLeft fixed w-14 h-screen flex flex-col items-center">
+
+            <img class="h-auto w-auto px-2 py-2 cursor-pointer" src="imgs/menu/personal.svg" alt="personal">
+            <img class="h-auto w-auto px-2 py-2 cursor-pointer" src="imgs/menu/tools.svg" alt="tools">
+
+
+            <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
+
+                <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/code.svg" alt="code">
+                <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/codeHover.svg" alt="codeHover">
+            </div>
+
+
+            <img class="h-auto w-auto px-2 py-2 cursor-pointer" src="imgs/menu/contact.svg" alt="contact">
+
+        </div>
+
+        <div class="bg-bgDark w-full h-screen">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </div>
+
+    </div>
+
+</body>
 
 </html>
