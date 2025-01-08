@@ -8,11 +8,12 @@
         Denis Ferreira - Portfólio
     </title>
     <link href="src/output.css" rel="stylesheet">
+    <script src="src/script.js" defer></script>
 </head>
 
 <body>
 
-    <div class="bg-bgMenuTop w-full h-10 flex flex-row justify-start items-center">
+    <div class="bg-bgMenuTop w-full h-10 flex flex-row justify-start items-center relative">
 
         <span class="flex justify-center items-center">
             <img class="h-4 w-auto px-2" src="imgs/vscode.svg" alt="vscode">
@@ -24,21 +25,37 @@
         <!-- Ajuda -> Atalho para contato -->
 
 
-        <button class="block sm:hidden">
-            <img class="h-6 w-auto px-2" src="imgs/menu/hamburger.svg">
+        <button id="menuButton" class="block sm:hidden" aria-controls="menuHamburger" aria-expanded="false">
+            <img class="h-6 w-auto px-2" src="imgs/menu/hamburger.svg" alt="hamburger">
         </button>
 
-        <button
-            class="hidden sm:block hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">File</button>
+        <div id="menuHamburger" class="hidden absolute top-full left-0 bg-bgMenuHamburger">
 
-        <button
-            class="hidden sm:block hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Edit</button>
+            <div class="flex flex-col mt-1 w-44 justify-start items-start">
 
-        <button
-            class="hidden sm:block hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">View</button>
+                <button class="font-sans text-textColorMenu text-sm px-2 py-2 leading-none">File</button>
+                <button class="font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Edit</button>
+                <button class="font-sans text-textColorMenu text-sm px-2 py-2 leading-none">View</button>
+                <button class="font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Help</button>
 
-        <button
-            class="hidden sm:block hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Help</button>
+            </div>
+
+        </div>
+
+        <div class="hidden sm:block">
+            <button class=" hover:bg-bgMenuTopHover hover:rounded-md font-sans
+             text-textColorMenu text-sm px-2 py-2 leading-none">File</button>
+
+            <button class=" hover:bg-bgMenuTopHover hover:rounded-md font-sans 
+            text-textColorMenu text-sm px-2 py-2 leading-none">Edit</button>
+
+            <button class=" hover:bg-bgMenuTopHover hover:rounded-md font-sans
+             text-textColorMenu text-sm px-2 py-2 leading-none">View</button>
+
+            <button class=" hover:bg-bgMenuTopHover hover:rounded-md font-sans
+             text-textColorMenu text-sm px-2 py-2 leading-none">Help</button>
+        </div>
+
 
     </div>
 
@@ -110,7 +127,7 @@
 
         </div>
 
-        <div class="bg-bgDark flex-1 sm:ml-14">
+        <div class="bg-bgDark flex-1 sm:ml-14 w-full h-full overflow-auto">
             aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         </div>
 
