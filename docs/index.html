@@ -23,21 +23,28 @@
         <!-- Exibir -> Botão para mostrar/ocultar o menu lateral -->
         <!-- Ajuda -> Atalho para contato -->
 
-        <button
-            class="hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">File</button>
+
+        <button class="block sm:hidden">
+            <img class="h-6 w-auto px-2" src="imgs/menu/hamburger.svg">
+        </button>
 
         <button
-            class="hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Edit</button>
+            class="hidden sm:block hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">File</button>
 
         <button
-            class="hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">View</button>
+            class="hidden sm:block hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Edit</button>
 
         <button
-            class="hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Help</button>
+            class="hidden sm:block hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">View</button>
+
+        <button
+            class="hidden sm:block hover:bg-bgMenuTopHover hover:rounded-md font-sans text-textColorMenu text-sm px-2 py-2 leading-none">Help</button>
+
     </div>
 
-    <div class="flex flex-col">
-        <div class="bg-bgMenuLeft fixed w-14 h-screen flex flex-col items-center">
+    <div class="flex flex-col h-screen">
+        <div class="bg-bgMenuLeft fixed hidden
+         sm:flex sm:h-screen sm:w-14 sm:flex-col sm:items-center">
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
                 <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/personal.svg" alt="personal">
@@ -103,7 +110,8 @@
 
         </div>
 
-        <div class="bg-bgDark w-full h-screen">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <div class="bg-bgDark flex-1 sm:ml-14">
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         </div>
 
     </div>
