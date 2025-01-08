@@ -8,6 +8,7 @@ module.exports = {
         'bgDark': '#1c1c1c',  //Background color for dark mode
         'bgMenuTop': '#403c3c', //Background color for top menu
         'bgMenuHamburger': '#282424', //Background color for hamburger menu
+        'bgMenuHamburgerHover': '#087cd4', //Background color for hamburger menu hover
         'bgMenuTopHover': '#484444', //Background color for top menu hover
         'bgMenuLeft': '#383434',   //Background color for left menu
         'bgSpanMenu': '#252526', //Background color for span menu
