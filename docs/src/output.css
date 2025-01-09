@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .fixed {
   position: fixed;
 }
@@ -584,6 +588,34 @@ video {
 
 .top-full {
   top: 100%;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .ml-2 {
@@ -822,6 +854,14 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -851,6 +891,11 @@ video {
 .text-textColorMenu {
   --tw-text-opacity: 1;
   color: rgb(191 191 191 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -929,5 +974,13 @@ video {
 
   .sm\:items-center {
     align-items: center;
+  }
+
+  .sm\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .sm\:pt-14 {
+    padding-top: 3.5rem;
   }
 }
