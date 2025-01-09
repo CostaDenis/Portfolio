@@ -16,7 +16,6 @@ menuButton.addEventListener("click", (event) => {
     }
 });
 
-// Fechar o menu ao clicar fora dele
 document.addEventListener("click", (event) => {
     if (
         menuHamburger.classList.contains("block") &&
