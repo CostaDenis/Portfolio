@@ -4,7 +4,7 @@ module.exports = {
     './docs/**/*.{html,js}'],
   theme: {
     extend: {
-      colors: {
+      colors: {       //Menu dark padrão
         'bgDark': '#1c1c1c',  //Background color for dark mode
         'bgMenuTop': '#403c3c', //Background color for top menu
         'bgMenuHamburger': '#282424', //Background color for hamburger menu

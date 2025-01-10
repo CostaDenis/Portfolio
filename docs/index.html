@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Denis Ferreira - Portfólio
+        Denis Ferreira
     </title>
     <link href="src/output.css" rel="stylesheet">
     <script src="src/script.js" defer></script>
@@ -27,7 +27,7 @@
 
         <button id="menuButton" class="block sm:hidden hover:bg-bgMenuTopHover hover:rounded-md"
             aria-controls="menuHamburger" aria-expanded="false">
-            <img class="h-6 w-auto px-3" src="imgs/menu/hamburger.svg" alt="hamburger">
+            <img class="h-6 w-auto px-2" src="imgs/menu/hamburger.svg" alt="hamburger">
         </button>
 
         <div id="menuHamburger" class="hidden absolute sm:hidden top-full left-10 rounded-sm  bg-bgMenuHamburger">
@@ -102,8 +102,9 @@
              text-textColorMenu text-sm px-2 py-2 leading-none">Help</button>
 
         </div>
+
         <!--Arrumar isso ae-->
-        <div class="flex flex-grow justify-center items-center top-0 h-10">
+        <div class="hidden sm:flex-grow sm:flex justify-center sm:mr-36 items-center h-full">
             <span class="font-sans text-textColorMenu text-sm px-2 py-2 leading-none">
                 Denis Ferreira - Portifólio</span>
         </div>
@@ -117,9 +118,10 @@
          sm:flex sm:h-screen sm:w-14 sm:flex-col sm:items-center z-40">
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
-                <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/personal.svg" alt="personal">
-                <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/personalHover.svg"
-                    alt="personalHover">
+                <img id="personal" class="menu-image h-auto w-auto block group-hover:hidden"
+                    src="imgs/menu/personal.svg" alt="personal">
+                <img id="personal" class="menu-image h-auto w-auto hidden group-hover:block"
+                    src="imgs/menu/personalHover.svg" alt="personalHover">
 
                 <div
                     class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-textColorMenu whitespace-nowrap bg-bgSpanMenu rounded-md 
@@ -133,8 +135,9 @@
             </div>
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
-                <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/tools.svg" alt="tools">
-                <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/toolsHover.svg" alt="toolsHover">
+                <img id="tools" class="h-auto w-auto block group-hover:hidden" src="imgs/menu/tools.svg" alt="tools">
+                <img id="tools" class="h-auto w-auto hidden group-hover:block" src="imgs/menu/toolsHover.svg"
+                    alt="toolsHover">
 
                 <div
                     class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-textColorMenu whitespace-nowrap bg-bgSpanMenu rounded-md 
@@ -149,8 +152,9 @@
 
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
-                <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/code.svg" alt="code">
-                <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/codeHover.svg" alt="codeHover">
+                <img id="code" class="h-auto w-auto block group-hover:hidden" src="imgs/menu/code.svg" alt="code">
+                <img id="code" class="h-auto w-auto hidden group-hover:block" src="imgs/menu/codeHover.svg"
+                    alt="codeHover">
 
                 <div
                     class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-textColorMenu whitespace-nowrap bg-bgSpanMenu rounded-md 
@@ -164,8 +168,10 @@
             </div>
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
-                <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/contact.svg" alt="contact">
-                <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/contactHover.svg" alt="contactHover">
+                <img id="contact" class="h-auto w-auto block group-hover:hidden" src="imgs/menu/contact.svg"
+                    alt="contact">
+                <img id="contact" class="h-auto w-auto hidden group-hover:block" src="imgs/menu/contactHover.svg"
+                    alt="contactHover">
 
                 <div
                     class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-textColorMenu whitespace-nowrap bg-bgSpanMenu rounded-md 
@@ -182,8 +188,9 @@
 
                 <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
 
-                    <img class="h-auto w-auto block group-hover:hidden" src="imgs/menu/gear.svg" alt="gear">
-                    <img class="h-auto w-auto hidden group-hover:block" src="imgs/menu/gearHover.svg" alt="gearHover">
+                    <img id="manage" class="h-auto w-auto block group-hover:hidden" src="imgs/menu/gear.svg" alt="gear">
+                    <img id="manage" class="h-auto w-auto hidden group-hover:block" src="imgs/menu/gearHover.svg"
+                        alt="gearHover">
 
                     <div
                         class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-textColorMenu whitespace-nowrap bg-bgSpanMenu rounded-md
@@ -206,10 +213,10 @@
             Explorer
         </div>
 
-        <div class="bg-bgDark flex flex-grow justify-center items-center h-full sm:pt-14 sm:ml-52 z-10">
+        <div id="main-content" class="bg-bgDark flex w-full justify-center items-center h-full sm:pt-14 sm:ml-52 z-10">
 
             <p class="text-white">
-                denisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenisdenis
+                denis
             </p>
 
         </div>
