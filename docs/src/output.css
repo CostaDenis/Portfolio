@@ -618,6 +618,10 @@ video {
   z-index: 50;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -626,12 +630,16 @@ video {
   margin-left: 1rem;
 }
 
-.ml-52 {
-  margin-left: 13rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -676,10 +684,6 @@ video {
 
 .w-0 {
   width: 0px;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .w-48 {
