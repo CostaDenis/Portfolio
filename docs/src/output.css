@@ -626,16 +626,12 @@ video {
   margin-left: 1rem;
 }
 
-.ml-56 {
-  margin-left: 14rem;
+.ml-52 {
+  margin-left: 13rem;
 }
 
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.ml-52 {
-  margin-left: 13rem;
 }
 
 .block {
@@ -930,6 +926,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:ml-52 {
+    margin-left: 13rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -948,6 +948,10 @@ video {
 
   .sm\:w-14 {
     width: 3.5rem;
+  }
+
+  .sm\:w-40 {
+    width: 10rem;
   }
 
   .sm\:flex-col {
