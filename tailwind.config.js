@@ -16,6 +16,10 @@ module.exports = {
         'textColorMenu': '#bfbfbf', //Text color for dark mode
 
       },
+      width: {
+        '42': '10.5rem',
+        '54': '13.5rem',
+      }
     },
   },
   plugins: [],

@@ -574,48 +574,48 @@ video {
   left: -0.25rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .left-10 {
   left: 2.5rem;
+}
+
+.left-14 {
+  left: 3.5rem;
 }
 
 .left-full {
   left: 100%;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
-.top-full {
-  top: 100%;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .top-0 {
   top: 0px;
 }
 
-.top-1 {
-  top: 0.25rem;
-}
-
-.top-12 {
-  top: 3rem;
+.top-1\/2 {
+  top: 50%;
 }
 
 .top-10 {
   top: 2.5rem;
 }
 
-.z-50 {
-  z-index: 50;
+.top-full {
+  top: 100%;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .ml-2 {
@@ -626,12 +626,16 @@ video {
   margin-left: 1rem;
 }
 
+.ml-56 {
+  margin-left: 14rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
+.ml-52 {
+  margin-left: 13rem;
 }
 
 .block {
@@ -678,6 +682,10 @@ video {
   width: 0px;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -690,8 +698,8 @@ video {
   width: 100%;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.flex-grow {
+  flex-grow: 1;
 }
 
 .-translate-y-1\/2 {
@@ -733,10 +741,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.overflow-auto {
-  overflow: auto;
 }
 
 .whitespace-nowrap {
@@ -790,6 +794,11 @@ video {
   background-color: rgb(28 28 28 / var(--tw-bg-opacity, 1));
 }
 
+.bg-bgExplorer {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
+}
+
 .bg-bgMenuHamburger {
   --tw-bg-opacity: 1;
   background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
@@ -837,29 +846,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.pl-20 {
-  padding-left: 5rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .font-sans {
@@ -944,10 +930,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:ml-14 {
-    margin-left: 3.5rem;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -974,10 +956,6 @@ video {
 
   .sm\:items-center {
     align-items: center;
-  }
-
-  .sm\:pl-20 {
-    padding-left: 5rem;
   }
 
   .sm\:pt-14 {
