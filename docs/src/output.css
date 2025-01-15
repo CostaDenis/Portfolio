@@ -574,6 +574,10 @@ video {
   left: -0.25rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -618,8 +622,8 @@ video {
   z-index: 50;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .ml-2 {
@@ -636,62 +640,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-56 {
-  margin-right: 14rem;
-}
-
-.-mr-72 {
-  margin-right: -18rem;
-}
-
-.mr-72 {
-  margin-right: 18rem;
-}
-
-.-mr-96 {
-  margin-right: -24rem;
-}
-
-.mr-96 {
-  margin-right: 24rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mr-36 {
-  margin-right: 9rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
-.mr-16 {
-  margin-right: 4rem;
-}
-
-.mr-20 {
-  margin-right: 5rem;
 }
 
 .block {
@@ -734,10 +682,6 @@ video {
   height: 100vh;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
 .w-0 {
   width: 0px;
 }
@@ -752,10 +696,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.flex-grow {
-  flex-grow: 1;
 }
 
 .-translate-y-1\/2 {
@@ -787,10 +727,6 @@ video {
   align-items: center;
 }
 
-.items-baseline {
-  align-items: baseline;
-}
-
 .justify-start {
   justify-content: flex-start;
 }
@@ -801,14 +737,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-items-center {
-  justify-items: center;
 }
 
 .whitespace-nowrap {
@@ -827,10 +755,6 @@ video {
   border-width: 0.25px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-b-4 {
   border-bottom-width: 4px;
 }
@@ -843,57 +767,47 @@ video {
   border-top-width: 4px;
 }
 
-.border-textColorMenu {
-  --tw-border-opacity: 1;
-  border-color: rgb(191 191 191 / var(--tw-border-opacity, 1));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
-}
-
 .border-b-transparent {
   border-bottom-color: transparent;
-}
-
-.border-r-textColorMenu {
-  --tw-border-opacity: 1;
-  border-right-color: rgb(191 191 191 / var(--tw-border-opacity, 1));
 }
 
 .border-t-transparent {
   border-top-color: transparent;
 }
 
-.bg-bgDark {
+.bg-DarkbgDark {
   --tw-bg-opacity: 1;
   background-color: rgb(28 28 28 / var(--tw-bg-opacity, 1));
 }
 
-.bg-bgExplorer {
+.bg-DarkbgExplorer {
   --tw-bg-opacity: 1;
   background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
 }
 
-.bg-bgMenuHamburger {
+.bg-DarkbgMenuHamburger {
   --tw-bg-opacity: 1;
   background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
 }
 
-.bg-bgMenuLeft {
+.bg-DarkbgMenuLeft {
   --tw-bg-opacity: 1;
   background-color: rgb(56 52 52 / var(--tw-bg-opacity, 1));
 }
 
-.bg-bgMenuTop {
+.bg-DarkbgMenuTop {
   --tw-bg-opacity: 1;
   background-color: rgb(64 60 60 / var(--tw-bg-opacity, 1));
 }
 
-.bg-bgSpanMenu {
+.bg-DarkbgSpanMenu {
   --tw-bg-opacity: 1;
   background-color: rgb(37 37 38 / var(--tw-bg-opacity, 1));
+}
+
+.bg-DarkbgStatusBar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 124 204 / var(--tw-bg-opacity, 1));
 }
 
 .p-1 {
@@ -925,13 +839,13 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -944,6 +858,10 @@ video {
   line-height: 1rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -952,13 +870,13 @@ video {
   line-height: 1;
 }
 
-.text-inherit {
-  color: inherit;
-}
-
-.text-textColorMenu {
+.text-DarktextColor {
   --tw-text-opacity: 1;
   color: rgb(191 191 191 / var(--tw-text-opacity, 1));
+}
+
+.text-inherit {
+  color: inherit;
 }
 
 .text-white {
@@ -984,12 +902,12 @@ video {
   border-radius: 0.375rem;
 }
 
-.hover\:bg-bgMenuHamburgerHover:hover {
+.hover\:bg-DarkbgMenuHamburgerHover:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(8 124 212 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-bgMenuTopHover:hover {
+.hover\:bg-DarkbgMenuTopHover:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(72 68 68 / var(--tw-bg-opacity, 1));
 }
@@ -1030,6 +948,10 @@ video {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-6 {
+    height: 1.5rem;
   }
 
   .sm\:h-screen {

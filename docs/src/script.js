@@ -30,8 +30,11 @@ document.addEventListener("click", (event) => {
     }
 });
 
+
+
 const section = {
-    personal: 'personal.html'
+    personal: 'personal.html',
+    settings: 'settings.html'
 };
 
 document.querySelectorAll('.menu-image').forEach(image => {
@@ -46,16 +49,14 @@ document.querySelectorAll('.menu-image').forEach(image => {
                     const content = await response.text();
                     mainContent.innerHTML = content;
                 } else {
-                    mainContent.innerHTML = `<p>Error loading content: ${response.status}</p>`;
+                    mainContent.innerHTML = `<p>Erro ao carregar: ${response.status}</p>`;
                 }
             } catch (error) {
-                mainContent.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+                mainContent.innerHTML = `<p>Erro ao carregar: ${error.message}</p>`;
             }
         } else {
             mainContent.innerHTML = '<p>Seção não encontrada</p>';
         }
     });
-
-
 
 });
