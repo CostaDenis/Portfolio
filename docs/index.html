@@ -24,6 +24,8 @@
         <!-- Exibir -> Botão para mostrar/ocultar o menu lateral -->
         <!-- Ajuda -> Atalho para contato -->
 
+        <!-- Fazer as abas interativas?-->
+
 
         <button id="menuButton" class="block sm:hidden hover:bg-DarkbgMenuTopHover hover:rounded-md"
             aria-controls="menuHamburger" aria-expanded="false">
@@ -103,19 +105,29 @@
 
         </div>
 
-        <!--Arrumar isso ae-->
-        <!-- <div class="hidden sm:flex-grow sm:flex justify-center sm:mr-36 items-center h-full">
-            <span class="font-sans text-textColorMenu text-sm px-2 py-2 leading-none">
-                Denis Ferreira - Portifólio</span>
-        </div> -->
-
-
     </div>
 
     <div class="flex flex-row h-screen">
 
         <div class="bg-DarkbgMenuLeft fixed top-10 left-0 hidden
          sm:flex sm:h-screen sm:w-14 sm:flex-col sm:items-center z-40">
+
+            <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
+                <img id="home" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/home.svg"
+                    alt="home">
+                <img id="home" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/homeHover.svg"
+                    alt="homeHover">
+
+                <div
+                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-DarktextColor whitespace-nowrap bg-DarkbgSpanMenu rounded-md 
+            border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    Tela inicial
+                    <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
+                     border-b-transparent border-r-textColor">
+                    </div>
+                </div>
+
+            </div>
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
                 <img id="personal" class="menu-image h-auto w-auto block group-hover:hidden"
@@ -135,8 +147,9 @@
             </div>
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
-                <img id="tools" class="h-auto w-auto block group-hover:hidden" src="imgs/menu/tools.svg" alt="tools">
-                <img id="tools" class="h-auto w-auto hidden group-hover:block" src="imgs/menu/toolsHover.svg"
+                <img id="tools" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/tools.svg"
+                    alt="tools">
+                <img id="tools" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/toolsHover.svg"
                     alt="toolsHover">
 
                 <div
@@ -152,8 +165,9 @@
 
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
-                <img id="code" class="h-auto w-auto block group-hover:hidden" src="imgs/menu/code.svg" alt="code">
-                <img id="code" class="h-auto w-auto hidden group-hover:block" src="imgs/menu/codeHover.svg"
+                <img id="code" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/code.svg"
+                    alt="code">
+                <img id="code" class="menu-image h-auto w-auto hidden group-hover:block" src="imgs/menu/codeHover.svg"
                     alt="codeHover">
 
                 <div
@@ -168,10 +182,10 @@
             </div>
 
             <div class="relative w-auto h-auto px-2 py-2 cursor-pointer group">
-                <img id="contact" class="h-auto w-auto block group-hover:hidden" src="imgs/menu/contact.svg"
+                <img id="contact" class="menu-image h-auto w-auto block group-hover:hidden" src="imgs/menu/contact.svg"
                     alt="contact">
-                <img id="contact" class="h-auto w-auto hidden group-hover:block" src="imgs/menu/contactHover.svg"
-                    alt="contactHover">
+                <img id="contact" class="menu-image h-auto w-auto hidden group-hover:block"
+                    src="imgs/menu/contactHover.svg" alt="contactHover">
 
                 <div
                     class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-DarktextColor whitespace-nowrap bg-DarkbgSpanMenu rounded-md 
@@ -217,9 +231,48 @@
 
         <div id="main-content" class="bg-DarkbgDark flex w-full h-full sm:pt-14 sm:ml-52 z-10">
 
-            <p class="text-white">
-                denis
-            </p>
+            <!-- <div class="flex flex-col justify-center items-center w-full h-full">
+
+                <img class="h-72 w-auto" src="imgs/vscode-bg.svg" alt="vscode-bg">
+                <p>aaaaaaaaaaaaaaaaaaaaaaa</p>
+                <p>aaaaaaaaaaaaaaaaaaaaaaa</p>
+                <p>aaaaaaaaaaaaaaaaaaaaaaa</p>
+                <p>aaaaaaaaaaaaaaaaaaaaaaa</p>
+                <p>aaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div> -->
+
+
+
+            <!-- <div class="flex flex-col gap-2">
+
+                <div class="flex flex-row">
+                    <h2 class="font-sans text-6xl text-white">Opa, sou o<h2
+                            class="font-sans text-6xl text-DarktextColorSecundaryWelcome ml-3">Denis</h2>
+                    </h2>
+                </div>
+
+                <h2 class="font-sans text-4xl text-white">Desenvolvedor de Software</h2>
+
+                <p></p>
+            </div> -->
+
+
+            <!--Deixar responsivo-->
+
+            <div class="flex flex-col justify-center items-center w-full gap-10">
+
+                <div class="flex flex-row whitespace-nowrap">
+
+                    <h1 class="font-sans text-2xl md:text-8xl text-DarktextColorSecundaryWelcome">Denis Ferreira
+                    </h1>
+                    <h2 class="font-sans text-2xl md:text-8xl text-DarktextColorSecundaryWelcome animate-bounce">|</h2>
+
+                </div>
+                <h3 class="font-sans text-6xl text-white">Desenvolvedor de Software</h3>
+
+                <p></p>
+            </div>
+
 
         </div>
 

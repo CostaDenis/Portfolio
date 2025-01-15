@@ -15,6 +15,7 @@ module.exports = {
         'DarkbgSpanMenu': '#252526', //Background color for span menu
         'DarkbgExplorer': '#282424', //Background color for explorer
         'DarktextColor': '#bfbfbf', //Text color for dark mode
+        'DarktextColorSecundaryWelcome': '#2885ff', //Text color for dark mode
         'DarkbgStatusBar': '#087ccc', //Background color for status bar
 
         //GitHub Dark Default
