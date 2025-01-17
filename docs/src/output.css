@@ -586,10 +586,6 @@ video {
   left: 2.5rem;
 }
 
-.left-14 {
-  left: 3.5rem;
-}
-
 .left-full {
   left: 100%;
 }
@@ -614,6 +610,10 @@ video {
   z-index: 10;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -628,10 +628,6 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .ml-4 {
@@ -674,8 +670,8 @@ video {
   height: 1.5rem;
 }
 
-.h-72 {
-  height: 18rem;
+.h-8 {
+  height: 2rem;
 }
 
 .h-auto {
@@ -731,27 +727,6 @@ video {
   animation: bounce 1s infinite;
 }
 
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -782,18 +757,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
 }
 
 .gap-10 {
@@ -841,11 +804,6 @@ video {
   background-color: rgb(28 28 28 / var(--tw-bg-opacity, 1));
 }
 
-.bg-DarkbgExplorer {
-  --tw-bg-opacity: 1;
-  background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
-}
-
 .bg-DarkbgMenuHamburger {
   --tw-bg-opacity: 1;
   background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
@@ -869,6 +827,11 @@ video {
 .bg-DarkbgStatusBar {
   --tw-bg-opacity: 1;
   background-color: rgb(8 124 204 / var(--tw-bg-opacity, 1));
+}
+
+.bg-DarkbgWindow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
 }
 
 .p-1 {
@@ -904,18 +867,13 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-6xl {
   font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-8xl {
-  font-size: 6rem;
   line-height: 1;
 }
 
@@ -932,16 +890,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -1021,18 +969,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:ml-48 {
-    margin-left: 12rem;
-  }
-
-  .sm\:mr-36 {
-    margin-right: 9rem;
-  }
-
-  .sm\:ml-52 {
-    margin-left: 13rem;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -1057,14 +993,6 @@ video {
     width: 3.5rem;
   }
 
-  .sm\:w-40 {
-    width: 10rem;
-  }
-
-  .sm\:flex-grow {
-    flex-grow: 1;
-  }
-
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -1075,11 +1003,6 @@ video {
 
   .sm\:pt-14 {
     padding-top: 3.5rem;
-  }
-
-  .sm\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
   }
 }
 

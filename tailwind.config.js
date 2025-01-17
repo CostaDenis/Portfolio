@@ -5,31 +5,42 @@ module.exports = {
   theme: {
     extend: {
       colors: {       //Dark(Visual Studio)
-        'DarkbgDark': '#1c1c1c',  //Background color for dark mode
-        'DarkbgMenuTop': '#403c3c', //Background color for top menu
-        'DarkbgMenuHamburger': '#282424', //Background color for hamburger menu
-        'DarkbgMenuHamburgerHover': '#087cd4', //Background color for hamburger menu hover
-        'DarkbgMenuTopHover': '#484444', //Background color for top menu hover
-        'DarkbgMenuLeft': '#383434',   //Background color for left menu
-        'DarkbgMenuLeftSelected': '#ffffff', //Background color for left menu hover
-        'DarkbgSpanMenu': '#252526', //Background color for span menu
-        'DarkbgExplorer': '#282424', //Background color for explorer
-        'DarktextColor': '#bfbfbf', //Text color for dark mode
-        'DarktextColorSecundaryWelcome': '#2885ff', //Text color for dark mode
-        'DarkbgStatusBar': '#087ccc', //Background color for status bar
+        'DarkbgDark': '#1c1c1c',
+        'DarkbgMenuTop': '#403c3c',
+        'DarkbgMenuHamburger': '#282424',
+        'DarkbgMenuHamburgerHover': '#087cd4',
+        'DarkbgMenuTopHover': '#484444',
+
+        'DarkbgWindow': '#282424',
+        'DarkbgTabInactive': '#302c2c',
+        'DarkbgTabActive': '#201c1c',
+
+        'DarkbgMenuLeft': '#383434',
+        'DarkbgMenuLeftSelected': '#ffffff',
+        'DarkbgSpanMenu': '#252526',
+        'DarkbgExplorer': '#282424',
+        'DarktextColor': '#bfbfbf',
+        'DarktextColorSecundaryWelcome': '#2885ff',
+        'DarkbgStatusBar': '#087ccc',
 
         //GitHub Dark Default
-        'GitDbg': '#101414', //Background color for github dark
-        'GitDbgMenuTop': '#101414', //Background color for github dark top menu
-        'GitDbgMenuHamburger': '#181c24', //Background color for github dark hamburger menu
-        'GitDbgMenuHamburgerHover': '#403c4c', //Background color for github dark hamburger menu hover
-        'GitDbgMenuTopHover': '#282c2c', //Background color for github dark top menu hover
-        'GitDbgMenuLeft': '#101414', //Background color for github dark left menu
-        'GitDbgMenuLeftSelected': '#f84c3c', //Background color for github dark left menu
-        'GitDbgSpanMenu': '#161b22', //Background color for github dark span menu
-        'GitDbgExplorer': '#08040c', //Background color for github dark explorer
-        'GithubDarkTextColor': '#79818c', //Text color for github dark
-        'GitDbgStatusBar': '#101414', //Background color for github dark status bar
+        'GitDbg': '#101414',
+        'GitDbgMenuTop': '#101414',
+        'GitDbgMenuHamburger': '#181c24',
+        'GitDbgMenuHamburgerHover': '#403c4c',
+        'GitDbgMenuTopHover': '#282c2c',
+
+        'GitDbgWindow': '#08040c',
+        'GitDbgTabInactive': '#08040c',
+        'GitDbgTabActive': '#101414',
+
+
+        'GitDbgMenuLeft': '#101414',
+        'GitDbgMenuLeftSelected': '#f84c3c',
+        'GitDbgSpanMenu': '#161b22',
+        'GitDbgExplorer': '#08040c',
+        'GithubDarkTextColor': '#79818c',
+        'GitDbgStatusBar': '#101414',
 
       },
       width: {
