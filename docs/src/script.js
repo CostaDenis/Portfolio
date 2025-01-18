@@ -30,9 +30,29 @@ document.addEventListener("click", (event) => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const main_content = document.getElementById("main-content");
+
+    fetch("home.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Erro ao carregar: ${response.status}`);
+            }
+            return response.text();
+        })
+
+        .then(data => {
+            main_content.innerHTML = data;
+        })
+        .catch(error => {
+            console.error("Erro ao carregar o conteúdo:", error);
+            mainContent.innerHTML = "<p>Erro ao carregar o conteúdo.</p>";
+        });
+});
 
 
 const section = {
+    home: 'home.html',
     personal: 'personal.html',
     settings: 'settings.html'
 };
