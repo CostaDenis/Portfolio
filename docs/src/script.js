@@ -33,7 +33,7 @@ document.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
     const main_content = document.getElementById("main-content");
 
-    fetch("home.html")
+    fetch("settings.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro ao carregar: ${response.status}`);
@@ -43,7 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         .then(data => {
             main_content.innerHTML = data;
+            document.querySelector('.menu-div').classList.add('border-l-2', 'border-white');
         })
+
         .catch(error => {
             console.error("Erro ao carregar o conteúdo:", error);
             mainContent.innerHTML = "<p>Erro ao carregar o conteúdo.</p>";
@@ -57,9 +59,13 @@ const section = {
     settings: 'settings.html'
 };
 
-document.querySelectorAll('.menu-image').forEach(image => {
-    image.addEventListener('click', async () => {
-        const sectionFile = section[image.id];
+
+//Mudar a imagem do menu na proxima
+document.querySelectorAll('.menu-div').forEach(menuDiv => {
+    menuDiv.addEventListener('click', async () => {
+
+        const sectionKey = menuDiv.getAttribute('data-section');
+        const sectionFile = section[sectionKey];
 
         if (sectionFile) {
             try {
@@ -68,6 +74,14 @@ document.querySelectorAll('.menu-image').forEach(image => {
                 if (response.ok) {
                     const content = await response.text();
                     mainContent.innerHTML = content;
+
+                    document.querySelectorAll('.menu-div').forEach(div =>
+                        div.classList.remove('border-l-2', 'border-white')
+                    );
+
+
+                    menuDiv.classList.add('border-l-2', 'border-white');
+
                 } else {
                     mainContent.innerHTML = `<p>Erro ao carregar: ${response.status}</p>`;
                 }
@@ -78,5 +92,6 @@ document.querySelectorAll('.menu-image').forEach(image => {
             mainContent.innerHTML = '<p>Seção não encontrada</p>';
         }
     });
-
 });
+
+
