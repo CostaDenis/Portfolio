@@ -2,45 +2,46 @@
 module.exports = {
   content: ["./src/**/*.{html,js}",
     './docs/**/*.{html,js}'],
+  // darkMode: 'class',
   theme: {
     extend: {
-      colors: {       //Dark(Visual Studio)
-        'DarkbgDark': '#1c1c1c',
-        'DarkbgMenuTop': '#403c3c',
-        'DarkbgMenuHamburger': '#282424',
-        'DarkbgMenuHamburgerHover': '#087cd4',
-        'DarkbgMenuTopHover': '#484444',
+      colors: {
+        darkVS: {
+          bg: '#1c1c1c',
+          bgMenuTop: '#403c3c',
+          bgMenuHamburger: '#282424',
+          bgMenuHamburgerHover: '#087cd4',
+          bgMenuTopHover: '#484444',
 
-        'DarkbgWindow': '#282424',
-        'DarkbgTabInactive': '#302c2c',
-        'DarkbgTabActive': '#201c1c',
+          bgWindow: '#282424',
+          bgTabInactive: '#302c2c',
+          bgTabActive: '#201c1c',
 
-        'DarkbgMenuLeft': '#383434',
-        'DarkbgMenuLeftSelected': '#ffffff',
-        'DarkbgSpanMenu': '#252526',
-        'DarkbgExplorer': '#282424',
-        'DarktextColor': '#bfbfbf',
-        'DarktextColorSecundaryWelcome': '#2885ff',
-        'DarkbgStatusBar': '#087ccc',
+          bgMenuLeft: '#383434',
+          bgMenuLeftSelected: '#ffffff',
+          bgSpanMenu: '#252526',
+          bgExplorer: '#282424',
+          textColor: '#bfbfbf',
+          textColorSecundaryWelcome: '#2885ff',
+          bgStatusBar: '#087ccc',
+        },
 
-        //GitHub Dark Default
-        'GitDbg': '#101414',
-        'GitDbgMenuTop': '#101414',
-        'GitDbgMenuHamburger': '#181c24',
-        'GitDbgMenuHamburgerHover': '#403c4c',
-        'GitDbgMenuTopHover': '#282c2c',
-
-        'GitDbgWindow': '#08040c',
-        'GitDbgTabInactive': '#08040c',
-        'GitDbgTabActive': '#101414',
-
-
-        'GitDbgMenuLeft': '#101414',
-        'GitDbgMenuLeftSelected': '#f84c3c',
-        'GitDbgSpanMenu': '#161b22',
-        'GitDbgExplorer': '#08040c',
-        'GithubDarkTextColor': '#79818c',
-        'GitDbgStatusBar': '#101414',
+        darkGithub: {
+          bg: '#101414',
+          bgMenuTop: '#101414',
+          bgMenuHamburger: '#181c24',
+          bgMenuHamburgerHover: '#403c4c',
+          bgMenuTopHover: '#282c2c',
+          bgWindow: '#08040c',
+          bgTabInactive: '#08040c',
+          bgTabActive: '#101414',
+          bgMenuLeft: '#101414',
+          bgMenuLeftSelected: '#f84c3c',
+          bgSpanMenu: '#161b22',
+          bgExplorer: '#08040c',
+          TextColor: '#79818c',
+          StatusBar: '#101414',
+        },
 
       },
       width: {

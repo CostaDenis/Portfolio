@@ -662,10 +662,6 @@ video {
   margin-top: auto;
 }
 
-.mt-28 {
-  margin-top: 7rem;
-}
-
 .block {
   display: block;
 }
@@ -734,10 +730,6 @@ video {
   width: 100%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -789,10 +781,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-normal {
-  justify-content: normal;
 }
 
 .justify-start {
@@ -864,44 +852,53 @@ video {
   border-top-color: transparent;
 }
 
-.bg-DarkbgDark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 28 28 / var(--tw-bg-opacity, 1));
+.border-r-darkVS-textColor {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(191 191 191 / var(--tw-border-opacity, 1));
 }
 
-.bg-DarkbgMenuHamburger {
-  --tw-bg-opacity: 1;
-  background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
-}
-
-.bg-DarkbgMenuLeft {
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 52 52 / var(--tw-bg-opacity, 1));
-}
-
-.bg-DarkbgMenuTop {
+.bg-darkVS-bgMenuTop {
   --tw-bg-opacity: 1;
   background-color: rgb(64 60 60 / var(--tw-bg-opacity, 1));
 }
 
-.bg-DarkbgSpanMenu {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 37 38 / var(--tw-bg-opacity, 1));
-}
-
-.bg-DarkbgStatusBar {
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 124 204 / var(--tw-bg-opacity, 1));
-}
-
-.bg-DarkbgWindow {
+.bg-darkVS-bgMenuHamburger {
   --tw-bg-opacity: 1;
   background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
 }
 
-.bg-DarktextColorSecundaryWelcome {
+.bg-darkVS-bgMenuLeft {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 52 52 / var(--tw-bg-opacity, 1));
+}
+
+.bg-darkVS-bgSpanMenu {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 37 38 / var(--tw-bg-opacity, 1));
+}
+
+.bg-darkVS-bgWindow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 36 36 / var(--tw-bg-opacity, 1));
+}
+
+.bg-darkVS-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity, 1));
+}
+
+.bg-darkVS-bgStatusBar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 124 204 / var(--tw-bg-opacity, 1));
+}
+
+.bg-darkVS-textColorSecundaryWelcome {
   --tw-bg-opacity: 1;
   background-color: rgb(40 133 255 / var(--tw-bg-opacity, 1));
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-1 {
@@ -914,10 +911,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-2 {
@@ -947,10 +940,6 @@ video {
 
 .pt-16 {
   padding-top: 4rem;
-}
-
-.pt-44 {
-  padding-top: 11rem;
 }
 
 .font-sans {
@@ -999,16 +988,6 @@ video {
   line-height: 1;
 }
 
-.text-DarktextColor {
-  --tw-text-opacity: 1;
-  color: rgb(191 191 191 / var(--tw-text-opacity, 1));
-}
-
-.text-DarktextColorSecundaryWelcome {
-  --tw-text-opacity: 1;
-  color: rgb(40 133 255 / var(--tw-text-opacity, 1));
-}
-
 .text-inherit {
   color: inherit;
 }
@@ -1016,6 +995,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-darkVS-textColor {
+  --tw-text-opacity: 1;
+  color: rgb(191 191 191 / var(--tw-text-opacity, 1));
+}
+
+.text-darkVS-textColorSecundaryWelcome {
+  --tw-text-opacity: 1;
+  color: rgb(40 133 255 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -1040,29 +1029,29 @@ video {
   border-radius: 0.375rem;
 }
 
-.hover\:bg-DarkbgMenuHamburgerHover:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 124 212 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-DarkbgMenuTopHover:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(72 68 68 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:text-DarktextColorSecundaryWelcome:hover {
-  --tw-text-opacity: 1;
-  color: rgb(40 133 255 / var(--tw-text-opacity, 1));
+.hover\:bg-darkVS-bgMenuTopHover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 68 68 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-darkVS-bgMenuHamburgerHover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 124 212 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-darkVS-textColorSecundaryWelcome:hover {
+  --tw-text-opacity: 1;
+  color: rgb(40 133 255 / var(--tw-text-opacity, 1));
 }
 
 .group:hover .group-hover\:block {
@@ -1138,10 +1127,6 @@ video {
     justify-content: flex-start;
   }
 
-  .sm\:gap-4 {
-    gap: 1rem;
-  }
-
   .sm\:pt-20 {
     padding-top: 5rem;
   }
@@ -1169,10 +1154,6 @@ video {
 
   .md\:w-54 {
     width: 13.5rem;
-  }
-
-  .md\:gap-6 {
-    gap: 1.5rem;
   }
 
   .md\:text-2xl {
@@ -1205,10 +1186,6 @@ video {
     width: 13rem;
   }
 
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1231,10 +1208,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:gap-10 {
-    gap: 2.5rem;
-  }
-
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;

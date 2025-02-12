@@ -1,6 +1,8 @@
 const menuButton = document.getElementById("menuButton");
 const menuHamburger = document.getElementById("menuHamburger");
 
+//Botão dos temas
+
 const mainContent = document.getElementById("main-content");
 
 menuButton.addEventListener("click", (event) => {
@@ -44,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             main_content.innerHTML = data;
             document.querySelector('.menu-div').classList.add('border-l-2', 'border-white');
+            document.querySelector('.menu-div img').src = 'imgs/menu/homeHover.svg';
+
         })
 
         .catch(error => {
@@ -60,7 +64,6 @@ const section = {
 };
 
 
-//Mudar a imagem do menu na proxima
 document.querySelectorAll('.menu-div').forEach(menuDiv => {
     menuDiv.addEventListener('click', async () => {
 
@@ -75,12 +78,22 @@ document.querySelectorAll('.menu-div').forEach(menuDiv => {
                     const content = await response.text();
                     mainContent.innerHTML = content;
 
-                    document.querySelectorAll('.menu-div').forEach(div =>
-                        div.classList.remove('border-l-2', 'border-white')
-                    );
+                    document.querySelectorAll('.menu-div').forEach(div => {
+                        div.classList.remove('border-l-2', 'border-white');
+
+                        const img = div.querySelector('img');
+                        if (img) {
+                            img.src = img.src.replace('Hover', '');
+                        }
+                    });
 
 
                     menuDiv.classList.add('border-l-2', 'border-white');
+
+                    const selectedImg = menuDiv.querySelector('img');
+                    if (selectedImg) {
+                        selectedImg.src = selectedImg.src.replace('.svg', 'Hover.svg');
+                    }
 
                 } else {
                     mainContent.innerHTML = `<p>Erro ao carregar: ${response.status}</p>`;
@@ -93,5 +106,11 @@ document.querySelectorAll('.menu-div').forEach(menuDiv => {
         }
     });
 });
+
+themeBtnGH.addEventListener("click", () => {
+    document.documentElement.classList.remove("dark");
+    document.documentElement.classList.add("github-dark");
+});
+
 
 
