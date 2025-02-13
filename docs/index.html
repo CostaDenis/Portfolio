@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="darkVS">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,8 @@
 
 <body>
 
-    <div class="bg-darkVS-bgMenuTop fixed top-0 left-0 w-full h-10 flex flex-row justify-start items-center z-50">
+    <div class="bg-darkVS-MenuTop fixed top-0 left-0 w-full h-10 flex flex-row justify-start items-center z-50"
+        id="menuTop">
 
         <span class="flex justify-center items-center">
             <img class="h-4 w-auto px-2" src="imgs/vscode.svg" alt="vscode">
@@ -29,60 +30,60 @@
         <!-- Fazer as abas interativas?-->
 
 
-        <button id="menuButton" class="block sm:hidden hover:bg-darkVS-bgMenuTopHover hover:rounded-md"
+        <button id="menuButton" class="block sm:hidden hover:bg-darkVS-MenuTopHover hover:rounded-md"
             aria-controls="menuHamburger" aria-expanded="false">
             <img class="h-6 w-auto px-2" src="imgs/menu/hamburger.svg" alt="hamburger">
         </button>
 
-        <div id="menuHamburger" class="hidden absolute sm:hidden top-full left-10 rounded-sm bg-darkVS-bgMenuHamburger">
+        <div id="menuHamburger" class="hidden absolute sm:hidden top-full left-10 rounded-sm bg-darkVS-MenuHamburger">
 
             <div class="flex flex-col mt-1 w-48 p-1 justify-start items-start">
 
                 <div class="flex flex-row justify-between items-center w-full text-darkVS-textColor
-                    hover:bg-darkVS-bgMenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
+                    hover:bg-darkVS-MenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
                     <button class="font-sans text-inherit text-sm ml-2 leading-none">File</button>
                     <span class="text-inherit">></span>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-full text-darkVS-textColor
-                    hover:bg-darkVS-bgMenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
+                    hover:bg-darkVS-MenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
                     <button class="font-sans text-inherit text-sm ml-2 leading-none">Edit</button>
                     <span class="text-inherit">></span>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-full text-darkVS-textColor
-                    hover:bg-darkVS-bgMenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
+                    hover:bg-darkVS-MenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
                     <button class="font-sans text-inherit text-sm ml-2 leading-none">View</button>
                     <span class="text-inherit">></span>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-full text-darkVS-textColor
-                    hover:bg-darkVS-bgMenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
+                    hover:bg-darkVS-MenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
                     <button class="font-sans text-inherit text-sm ml-2 leading-none">Help</button>
                     <span class="text-inherit">></span>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-full text-darkVS-textColor
-                    hover:bg-darkVS-bgMenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
+                    hover:bg-darkVS-MenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
                     <button class="font-sans text-inherit text-sm ml-2 leading-none">Sobre
                         mim</button>
                     <span class="text-inherit">></span>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-full text-darkVS-textColor
-                    hover:bg-darkVS-bgMenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
+                    hover:bg-darkVS-MenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
                     <button class="font-sans text-inherit text-sm ml-2 leading-none">Tecnologias</button>
                     <span class="text-inherit">></span>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-full text-darkVS-textColor
-                    hover:bg-darkVS-bgMenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
+                    hover:bg-darkVS-MenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
                     <button class="font-sans text-inherit text-sm ml-2 leading-none">Projetos</button>
                     <span class="text-inherit">></span>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-full text-darkVS-textColor
-                    hover:bg-darkVS-bgMenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
+                    hover:bg-darkVS-MenuHamburgerHover hover:text-white hover:rounded-md py-1 px-4">
                     <button class="font-sans text-inherit text-sm ml-2 leading-none">Fale
                         comigo</button>
                     <span class="text-inherit">></span>
@@ -93,16 +94,16 @@
         </div>
 
         <div class="hidden sm:block">
-            <button class="hover:bg-darkVS-bgMenuTopHover hover:rounded-md font-sans
+            <button class="hover:bg-darkVS-MenuTopHover hover:rounded-md font-sans
              text-darkVS-textColor text-sm px-2 py-2 leading-none">File</button>
 
-            <button class=" hover:bg-darkVS-bgMenuTopHover hover:rounded-md font-sans 
+            <button class=" hover:bg-darkVS-MenuTopHover hover:rounded-md font-sans 
             text-darkVS-textColor text-sm px-2 py-2 leading-none">Edit</button>
 
-            <button class=" hover:bg-darkVS-bgMenuTopHover hover:rounded-md font-sans
+            <button class=" hover:bg-darkVS-MenuTopHover hover:rounded-md font-sans
              text-darkVS-textColor text-sm px-2 py-2 leading-none">View</button>
 
-            <button class=" hover:bg-darkVS-bgMenuTopHover hover:rounded-md font-sans
+            <button class=" hover:bg-darkVS-MenuTopHover hover:rounded-md font-sans
              text-darkVS-textColor text-sm px-2 py-2 leading-none">Help</button>
 
         </div>
@@ -111,7 +112,7 @@
 
     <div class="flex flex-row h-screen">
 
-        <div class="bg-darkVS-bgMenuLeft fixed top-10 left-0 hidden
+        <div class="bg-darkVS-MenuLeft fixed top-10 left-0 hidden
          sm:flex sm:h-screen sm:w-14 sm:flex-col sm:items-center z-40">
 
 
@@ -124,7 +125,7 @@
                     alt="homeHover">
 
                 <div
-                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-bgSpanMenu rounded-md 
+                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-SpanMenu rounded-md 
                         border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     Tela inicial
                     <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
@@ -142,7 +143,7 @@
                     src="imgs/menu/personalHover.svg" alt="personalHover">
 
                 <div
-                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-bgSpanMenu rounded-md 
+                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-SpanMenu rounded-md 
                         border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     Sobre mim
                     <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
@@ -159,7 +160,7 @@
                     alt="toolsHover">
 
                 <div
-                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-bgSpanMenu rounded-md 
+                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-SpanMenu rounded-md 
                         border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     Tecnologias
                     <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
@@ -177,7 +178,7 @@
                     alt="codeHover">
 
                 <div
-                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-bgSpanMenu rounded-md 
+                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-SpanMenu rounded-md 
                         border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     Projetos
                     <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
@@ -194,7 +195,7 @@
                     src="imgs/menu/contactHover.svg" alt="contactHover">
 
                 <div
-                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-bgSpanMenu rounded-md 
+                    class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-SpanMenu rounded-md 
                         border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     Fale comigo
                     <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
@@ -215,7 +216,7 @@
                         src="imgs/menu/settingsHover.svg" alt="settingsHover">
 
                     <div
-                        class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-bgSpanMenu rounded-md 
+                        class="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 px-3 py-2 text-xs font-medium text-darkVS-textColor whitespace-nowrap bg-darkVS-SpanMenu rounded-md 
                             border-[0.25px] border-textColorMenu opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                         Configurações
                         <div class="absolute -left-1 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent
@@ -230,7 +231,7 @@
         </div>
 
         <!-- Janela de abas -->
-        <div class="bg-darkVS-bgWindow hidden sm:block sm:flex-row sm:ml-14 h-8 w-full top-10 fixed z-30">
+        <div class="bg-darkVS-Window hidden sm:block sm:flex-row sm:ml-14 h-8 w-full top-10 fixed z-30">
 
         </div>
 
@@ -245,9 +246,9 @@
     </div>
 
     <div
-        class="bg-darkVS-bgStatusBar fixed left-0 bottom-0 w-full h-10 sm:h-6 flex flex-row justify-center items-center z-50">
+        class=" bg-[theme(colors.darkVS.StatusBar)] fixed left-0 bottom-0 w-full h-10 sm:h-6 flex flex-row justify-center items-center z-50">
         <p class="text-white">
-            Denis Ferreira - Portfólio
+            Denis Ferreira - Portfolio
     </div>
 
 </body>

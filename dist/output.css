@@ -710,26 +710,6 @@ video {
   min-height: 100vh;
 }
 
-.w-0 {
-  width: 0px;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
-.w-64 {
-  width: 16rem;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-full {
-  width: 100%;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -848,10 +828,6 @@ video {
   border-bottom-color: transparent;
 }
 
-.border-r-darkVS-textColor {
-  border-right-color: var(--textColor);
-}
-
 .border-t-transparent {
   border-top-color: transparent;
 }
@@ -864,38 +840,6 @@ video {
 .bg-\[\#1e1e1e\] {
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 30 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[theme\(colors\.darkVS\.StatusBar\)\] {
-  background-color: var(--StatusBar);
-}
-
-.bg-darkVS-MenuHamburger {
-  background-color: var(--MenuHamburger);
-}
-
-.bg-darkVS-MenuLeft {
-  background-color: var(--MenuLeft);
-}
-
-.bg-darkVS-MenuTop {
-  background-color: var(--MenuTop);
-}
-
-.bg-darkVS-SpanMenu {
-  background-color: var(--SpanMenu);
-}
-
-.bg-darkVS-Window {
-  background-color: var(--Window);
-}
-
-.bg-darkVS-bg {
-  background-color: var(--bg);
-}
-
-.bg-darkVS-textColorSecundaryWelcome {
-  background-color: var(--textColorSecundaryWelcome);
 }
 
 .p-0 {
@@ -989,14 +933,6 @@ video {
   line-height: 1;
 }
 
-.text-darkVS-textColor {
-  color: var(--textColor);
-}
-
-.text-darkVS-textColorSecundaryWelcome {
-  color: var(--textColorSecundaryWelcome);
-}
-
 .text-inherit {
   color: inherit;
 }
@@ -1028,21 +964,9 @@ video {
   border-radius: 0.375rem;
 }
 
-.hover\:bg-darkVS-MenuHamburgerHover:hover {
-  background-color: var(--MenuHamburgerHover);
-}
-
-.hover\:bg-darkVS-MenuTopHover:hover {
-  background-color: var(--MenuTopHover);
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:text-darkVS-textColorSecundaryWelcome:hover {
-  color: var(--textColorSecundaryWelcome);
 }
 
 .hover\:text-white:hover {
@@ -1093,14 +1017,6 @@ video {
 
   .sm\:h-screen {
     height: 100vh;
-  }
-
-  .sm\:w-14 {
-    width: 3.5rem;
-  }
-
-  .sm\:w-56 {
-    width: 14rem;
   }
 
   .sm\:flex-row {
@@ -1176,10 +1092,6 @@ video {
 @media (min-width: 1024px) {
   .lg\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .lg\:w-52 {
-    width: 13rem;
   }
 
   .lg\:text-3xl {

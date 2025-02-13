@@ -1,9 +1,10 @@
 const menuButton = document.getElementById("menuButton");
 const menuHamburger = document.getElementById("menuHamburger");
-
-//Botão dos temas
-
 const mainContent = document.getElementById("main-content");
+
+//Botões de tema
+// const btnThemeGithub = document.getElementById("btn-Theme-GHDark");
+const dMenuTop = document.getElementById("MenuTop");
 
 menuButton.addEventListener("click", (event) => {
     event.stopPropagation();
@@ -47,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
             main_content.innerHTML = data;
             document.querySelector('.menu-div').classList.add('border-l-2', 'border-white');
             document.querySelector('.menu-div img').src = 'imgs/menu/homeHover.svg';
-
         })
 
         .catch(error => {
@@ -107,10 +107,65 @@ document.querySelectorAll('.menu-div').forEach(menuDiv => {
     });
 });
 
-themeBtnGH.addEventListener("click", () => {
-    document.documentElement.classList.remove("dark");
-    document.documentElement.classList.add("github-dark");
-});
+function applyTheme(theme) {
+    const html = document.documentElement;
 
+    const themes = {
+        darkVS: {
+            '--bg': '#1c1c1c',
+            '--MenuTop': '#403c3c',
+            '--MenuHamburger': '#282424',
+            '--MenuHamburgerHover': '#087cd4',
+            '--MenuTopHover': '#484444',
+            '--Window': '#282424',
+            '--TabInactive': '#302c2c',
+            '--TabActive': '#201c1c',
+            '--MenuLeft': '#383434',
+            '--MenuLeftSelected': '#ffffff',
+            '--SpanMenu': '#252526',
+            '--Explorer': '#282424',
+            '--textColor': '#bfbfbf',
+            '--textColorSecundaryWelcome': '#2885ff',
+            '--StatusBar': '#087ccc',
+        },
+        darkGithub: {
+            '--bg': '#101414',
+            '--MenuTop': '#101414',
+            '--MenuHamburger': '#181c24',
+            '--MenuHamburgerHover': '#403c4c',
+            '--MenuTopHover': '#282c2c',
+            '--Window': '#08040c',
+            '--TabInactive': '#08040c',
+            '--TabActive': '#101414',
+            '--MenuLeft': '#101414',
+            '--MenuLeftSelected': '#f84c3c',
+            '--SpanMenu': '#161b22',
+            '--Explorer': '#08040c',
+            '--textColor': '#79818c',
+            '--textColorSecundaryWelcome': '#101414',
+            '--StatusBar': '#101414',
+        },
+        dracula: {
+
+        }
+    };
+
+    const selectedTheme = themes[theme];
+
+    if (!selectedTheme) {
+        console.error('Tema não encontrado:', theme);
+        return;
+    }
+
+    Object.keys(selectedTheme).forEach((key) => {
+        html.style.setProperty(key, selectedTheme[key]);
+    });
+    localStorage.setItem('selectedTheme', theme);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('selectedTheme') || 'darkVS';
+    applyTheme(savedTheme);
+});
 
 
