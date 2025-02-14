@@ -2,10 +2,6 @@ const menuButton = document.getElementById("menuButton");
 const menuHamburger = document.getElementById("menuHamburger");
 const mainContent = document.getElementById("main-content");
 
-//Botões de tema
-// const btnThemeGithub = document.getElementById("btn-Theme-GHDark");
-const dMenuTop = document.getElementById("MenuTop");
-
 menuButton.addEventListener("click", (event) => {
     event.stopPropagation();
     const isExpanded = menuHamburger.classList.contains("block");
@@ -125,28 +121,43 @@ function applyTheme(theme) {
             '--SpanMenu': '#252526',
             '--Explorer': '#282424',
             '--textColor': '#bfbfbf',
-            '--textColorSecundaryWelcome': '#2885ff',
-            '--StatusBar': '#087ccc',
+            '--ColorSecundary': '#2885ff',
+            '--StatusBar': '#087ccc'
         },
         darkGithub: {
-            '--bg': '#101414',
-            '--MenuTop': '#101414',
-            '--MenuHamburger': '#181c24',
-            '--MenuHamburgerHover': '#403c4c',
-            '--MenuTopHover': '#282c2c',
-            '--Window': '#08040c',
-            '--TabInactive': '#08040c',
-            '--TabActive': '#101414',
-            '--MenuLeft': '#101414',
-            '--MenuLeftSelected': '#f84c3c',
-            '--SpanMenu': '#161b22',
-            '--Explorer': '#08040c',
-            '--textColor': '#79818c',
-            '--textColorSecundaryWelcome': '#101414',
-            '--StatusBar': '#101414',
+            '--bg': '#22272e',
+            '--MenuTop': '#22272e',
+            '--MenuHamburger': '#2d333b',
+            '--MenuHamburgerHover': '#434b54',
+            '--MenuTopHover': '#33383d',
+            '--Window': '#1c2128zz',
+            '--TabInactive': '#1c2128',
+            '--TabActive': '#22272e',
+            '--MenuLeft': '#22272e',
+            '--MenuLeftSelected': '#22272e',
+            '--SpanMenu': '#2d333b',
+            '--Explorer': '#1c2128',
+            '--textColor': '#adbac7',
+            '--ColorSecundary': '#ec775c',
+            '--StatusBar': '#22272e'
         },
         dracula: {
-
+            '--bg': '#282a36',
+            '--MenuTop': '#28242c',
+            '--MenuHamburger': '#333645',
+            '--MenuHamburgerHover': '#373a49',
+            '--MenuTopHover': '#38343c',
+            '--Window': '#201c24',
+            '--TabInactive': '#21222c',
+            '--TabActive': '#272935',
+            '--MenuLeft': '#343746',
+            '--MenuLeftSelected': '#3c3d51',
+            '--SpanMenu': '#282a36z',
+            '--Explorer': '#21222c',
+            // '--textColor': '#ff79c6',
+            '--textColor': '#edede8',
+            '--ColorSecundary': '#9e5b8b',
+            '--StatusBar': '#191a21'
         }
     };
 
