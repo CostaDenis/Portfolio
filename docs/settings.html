@@ -15,23 +15,23 @@
          text-white block">Temas disponíveis</h2>
     </div>
 
-    <div class="w-full flex flex-col sm:flex-row flex-wrap mt-12 sm:mt-14 md:mt-16 lg:mt-20 
-    gap-14 mb-20 sm:ml-14">
+    <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 flex-wrap justify-center items-center 
+    mt-12 sm:mt-14 md:mt-16 gap-14 mb-20">
 
         <!-- div do tema -->
         <div class="flex justify-center items-center flex-col h-auto w-auto gap-2">
-            <img class="h-40 w-auto" src="imgs/settings/githubTheme.svg">
+            <img class="h-40 w-auto" src="imgs/settings/OneDark.svg">
             <h3 class="font-sans text-lg sm:text-xl 
             md:text-2xl lg:text-3xl text-white whitespace-nowrap">
-                Github Dark Default</h3>
+                Atom One Dark Theme</h3>
             <button
                 class="w-64 sm:w-56 md:w-54 lg:w-52 bg-darkVS-textColorSecundaryWelcome hover:bg-white text-white
                                  hover:text-darkVS-textColorSecundaryWelcome duration-500 p-2 rounded-sm font-bold whitespace-nowrap"
-                id="btn-Theme-GHDark" onclick="applyTheme('darkGithub')">Ativar
+                id="btn-Theme-GHDark" onclick="applyTheme('oneDark')">Ativar
                 tema</button>
         </div>
 
-        <div class="flex justify-center items-center flex-col h-auto w-auto gap-2">
+        <div class="flex basis-1 sm:basis-1/3 justify-center items-center flex-col h-auto w-auto gap-2">
             <img class="h-40 w-auto" src="imgs/settings/vsCode.svg">
             <h3 class="font-sans text-lg sm:text-xl 
             md:text-2xl lg:text-3xl text-white whitespace-nowrap">
@@ -52,6 +52,42 @@
                 class="w-64 sm:w-56 md:w-54 lg:w-52 bg-darkVS-textColorSecundaryWelcome hover:bg-white text-white
                                  hover:text-darkVS-textColorSecundaryWelcome duration-500 p-2 rounded-sm font-bold whitespace-nowrap"
                 id="btn-Theme-GHDark" onclick="applyTheme('dracula')">Ativar
+                tema</button>
+        </div>
+
+        <div class="flex justify-center items-center flex-col h-auto w-auto gap-2">
+            <img class="h-40 w-auto" src="imgs/settings/monokaiLight.svg">
+            <h3 class="font-sans text-lg sm:text-xl 
+            md:text-2xl lg:text-3xl text-white whitespace-nowrap">
+                Monokai Light</h3>
+            <button
+                class="w-64 sm:w-56 md:w-54 lg:w-52 bg-darkVS-textColorSecundaryWelcome hover:bg-white text-white
+                                 hover:text-darkVS-textColorSecundaryWelcome duration-500 p-2 rounded-sm font-bold whitespace-nowrap"
+                id="btn-Theme-GHDark" onclick="applyTheme('monokaiLight')">Ativar
+                tema</button>
+        </div>
+
+        <div class="flex justify-center items-center flex-col h-auto w-auto gap-2">
+            <img class="h-40 w-auto" src="imgs/settings/winteriscoming.svg">
+            <h3 class="font-sans text-lg sm:text-xl 
+            md:text-2xl lg:text-3xl text-white whitespace-nowrap">
+                Winter is Coming</h3>
+            <button
+                class="w-64 sm:w-56 md:w-54 lg:w-52 bg-darkVS-textColorSecundaryWelcome hover:bg-white text-white
+                                 hover:text-darkVS-textColorSecundaryWelcome duration-500 p-2 rounded-sm font-bold whitespace-nowrap"
+                id="btn-Theme-GHDark" onclick="applyTheme('winterComing')">Ativar
+                tema</button>
+        </div>
+
+        <div class="flex justify-center items-center flex-col h-auto w-auto gap-2">
+            <img class="h-40 w-auto" src="imgs/settings/vsCode.svg">
+            <h3 class="font-sans text-lg sm:text-xl 
+            md:text-2xl lg:text-3xl text-white whitespace-nowrap">
+                Quiet Light</h3>
+            <button
+                class="w-64 sm:w-56 md:w-54 lg:w-52 bg-darkVS-textColorSecundaryWelcome hover:bg-white text-white
+                                 hover:text-darkVS-textColorSecundaryWelcome duration-500 p-2 rounded-sm font-bold whitespace-nowrap"
+                id="btn-Theme-GHDark" onclick="applyTheme('quietLight')">Ativar
                 tema</button>
         </div>
 

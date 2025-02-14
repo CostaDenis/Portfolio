@@ -662,12 +662,20 @@ video {
   margin-top: auto;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -730,8 +738,24 @@ video {
   width: 100%;
 }
 
+.max-w-24 {
+  max-width: 6rem;
+}
+
+.max-w-44 {
+  max-width: 11rem;
+}
+
+.max-w-72 {
+  max-width: 18rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.basis-1 {
+  flex-basis: 0.25rem;
 }
 
 .-translate-y-1\/2 {
@@ -761,6 +785,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -801,6 +829,18 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-40 {
+  gap: 10rem;
 }
 
 .overflow-y-auto {
@@ -854,16 +894,6 @@ video {
 
 .border-t-transparent {
   border-top-color: transparent;
-}
-
-.bg-\[\#101414\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 20 20 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#1e1e1e\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 30 30 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[theme\(colors\.darkVS\.StatusBar\)\] {
@@ -1075,6 +1105,10 @@ video {
     margin-top: 2rem;
   }
 
+  .sm\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1101,6 +1135,14 @@ video {
 
   .sm\:w-56 {
     width: 14rem;
+  }
+
+  .sm\:basis-1\/3 {
+    flex-basis: 33.333333%;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -1150,6 +1192,10 @@ video {
 
   .md\:w-54 {
     width: 13.5rem;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:text-2xl {
