@@ -6,21 +6,30 @@ module.exports = {
     extend: {
       colors: {
         darkVS: {
-          bg: 'var(--bg)',
-          MenuTop: 'var(--MenuTop)',
-          MenuHamburger: 'var(--MenuHamburger)',
-          MenuHamburgerHover: 'var(--MenuHamburgerHover)',
-          MenuTopHover: 'var(--MenuTopHover)',
-          Window: 'var(--Window)',
-          TabInactive: 'var(--TabInactive)',
-          TabActive: 'var(--TabActive)',
-          MenuLeft: 'var(--MenuLeft)',
-          MenuLeftSelected: 'var(--MenuLeftSelected)',
-          SpanMenu: 'var(--SpanMenu)',
-          Explorer: 'var(--Explorer)',
-          textColor: 'var(--textColor)',
-          textColorSecundaryWelcome: 'var(--textColorSecundaryWelcome)',
+          bg: 'var(--bg)', //
+          MenuTop: 'var(--MenuTop)', //
+          MenuTopHover: 'var(--MenuTopHover)', //
+          TextColorMenuTop: 'var(--TextColorMenuTop)',//
+          MenuHamburguer: 'var(--MenuHamburguer)',//
+          MenuHamburguerHover: 'var(--MenuHamburguerHover)',//
+          MenuHamburguerText: 'var(--MenuHamburguerText)',//
+          MenuHamburguerHoverText: 'var(--MenuHamburguerHoverText)',//
+          MenuTopHover: 'var(--MenuTopHover)',//
+          Window: 'var(--Window)', //Implementar
+          WindowBorder: 'var(--WindowBorder)', //Implementar
+          TextTabActive: 'var(--TextTabActive)', //Implementar
+          TextTabInactive: 'var(--TextTabInactive)', //Implementar
+          TabInactive: 'var(--TabInactive)', //Implementar
+          TabActive: 'var(--TabActive)', //Implementar
+          MenuLeft: 'var(--MenuLeft)',//
+          MenuLeftSelected: 'var(--MenuLeftSelected)', //Implementar
+          SpanMenu: 'var(--SpanMenu)',//
+          TextColorSpanMenu: 'var(--TextColorSpanMenu)',//
+          Explorer: 'var(--Explorer)', //Implementar
+          TextColor: 'var(--TextColor)',
+          ColorSecundary: 'var(--ColorSecundary)',
           StatusBar: 'var(--StatusBar)',
+          TextColorStatusBar: 'var(--TextColorStatusBar)'
         },
       },
       width: {
