@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         .then(data => {
             main_content.innerHTML = data;
-            document.querySelector('.menu-div').classList.add('border-l-2', 'border-white');
+            document.querySelector('.menu-div').classList.add('border-l-2', 'border-darkVS-MenuLeftSelect');
             document.querySelector('.menu-div img').src = 'imgs/menu/homeHover.svg';
         })
 
@@ -56,8 +56,27 @@ document.addEventListener("DOMContentLoaded", () => {
 const section = {
     home: 'home.html',
     personal: 'personal.html',
+    technologies: 'technologies.html',
+    projects: 'projects.html',
+    talkToMe: 'talkToMe.html',
     settings: 'settings.html'
 };
+
+
+async function loadPage(page) {
+    try {
+        const response = await fetch(page);
+
+        if (response.ok) {
+            const content = await response.text();
+            mainContent.innerHTML = content;
+        } else {
+            mainContent.innerHTML = `<p>Erro ao carregar: ${response.status}</p>`;
+        }
+    } catch (error) {
+        mainContent.innerHTML = `<p>Erro ao carregar: ${error.message}</p>`;
+    }
+}
 
 
 document.querySelectorAll('.menu-div').forEach(menuDiv => {
@@ -75,7 +94,7 @@ document.querySelectorAll('.menu-div').forEach(menuDiv => {
                     mainContent.innerHTML = content;
 
                     document.querySelectorAll('.menu-div').forEach(div => {
-                        div.classList.remove('border-l-2', 'border-white');
+                        div.classList.remove('border-l-2', 'border-darkVS-MenuLeftSelect');
 
                         const img = div.querySelector('img');
                         if (img) {
@@ -84,7 +103,7 @@ document.querySelectorAll('.menu-div').forEach(menuDiv => {
                     });
 
 
-                    menuDiv.classList.add('border-l-2', 'border-white');
+                    menuDiv.classList.add('border-l-2', 'border-darkVS-MenuLeftSelect');
 
                     const selectedImg = menuDiv.querySelector('img');
                     if (selectedImg) {
@@ -173,7 +192,7 @@ function applyTheme(theme) {
             '--TabInactive': '#21222c',
             '--TabActive': '#282a36',
             '--MenuLeft': '#343746',
-            '--MenuLeftSelected': '#9e5b8b',
+            '--MenuLeftSelect': '#9e5b8b',
             '--SpanMenu': '#282a36z',
             '--TextColorSpanMenu': '#f8f8f2',
             '--Explorer': '#21222c',
@@ -198,7 +217,7 @@ function applyTheme(theme) {
             '--TabInactive': '#ececec',
             '--TabActive': '#fafafa',
             '--MenuLeft': '#2c2c2c',
-            '--MenuLeftSelected': '#ffffff',
+            '--MenuLeftSelect': '#ffffff',
             '--SpanMenu': '#f3f3f3',
             '--TextColorSpanMenu': '#616161',
             '--Explorer': '#f3f3f3',
@@ -223,7 +242,7 @@ function applyTheme(theme) {
             '--TabInactive': '#ececec',
             '--TabActive': '#ffffff',
             '--MenuLeft': '#2c2c2c',
-            '--MenuLeftSelected': '#99d0f7',
+            '--MenuLeftSelect': '#99d0f7',
             '--SpanMenu': '#ffffff',
             '--TextColorSpanMenu': '#111111',
             '--Explorer': '#f3f3f3',
@@ -248,7 +267,7 @@ function applyTheme(theme) {
             '--TabInactive': '#ececec',
             '--TabActive': '#f5f5f5',
             '--MenuLeft': '#ededf5',
-            '--MenuLeftSelected': '#705697',
+            '--MenuLeftSelect': '#705697',
             '--SpanMenu': '#f3f3f3',
             '--TextColorSpanMenu': '#616161',
             '--Explorer': '#f2f2f2',

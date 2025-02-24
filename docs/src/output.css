@@ -558,6 +558,10 @@ video {
   pointer-events: none;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
 }
@@ -650,12 +654,12 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-auto {
@@ -807,8 +811,8 @@ video {
   justify-content: space-between;
 }
 
-.gap-14 {
-  gap: 3.5rem;
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-2 {
@@ -851,9 +855,8 @@ video {
   border-top-width: 4px;
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+.border-darkVS-MenuLeftSelect {
+  border-color: var(--MenuLeftSelect);
 }
 
 .border-b-transparent {
@@ -1007,6 +1010,10 @@ video {
   color: var(--TextColorMenuTop);
 }
 
+.text-darkVS-TextColorSpanMenu {
+  color: var(--TextColorSpanMenu);
+}
+
 .text-darkVS-TextColorStatusBar {
   color: var(--TextColorStatusBar);
 }
@@ -1018,10 +1025,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-darkVS-TextColorSpanMenu {
-  color: var(--TextColorSpanMenu);
 }
 
 .opacity-0 {
@@ -1084,12 +1087,12 @@ video {
     margin-left: 3.5rem;
   }
 
-  .sm\:mt-14 {
-    margin-top: 3.5rem;
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
   }
 
-  .sm\:mt-8 {
-    margin-top: 2rem;
+  .sm\:mt-4 {
+    margin-top: 1rem;
   }
 
   .sm\:block {
@@ -1169,8 +1172,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-16 {
-    margin-top: 4rem;
+  .md\:mt-12 {
+    margin-top: 3rem;
   }
 
   .md\:w-54 {

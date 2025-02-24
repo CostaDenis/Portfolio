@@ -22,7 +22,7 @@ module.exports = {
           TabInactive: 'var(--TabInactive)', //Implementar
           TabActive: 'var(--TabActive)', //Implementar
           MenuLeft: 'var(--MenuLeft)',//
-          MenuLeftSelected: 'var(--MenuLeftSelected)', //Implementar
+          MenuLeftSelect: 'var(--MenuLeftSelect)', //Implementar
           SpanMenu: 'var(--SpanMenu)',//
           TextColorSpanMenu: 'var(--TextColorSpanMenu)',//
           Explorer: 'var(--Explorer)', //Implementar
