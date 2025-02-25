@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
 const section = {
     home: 'home.html',
     personal: 'personal.html',
-    technologies: 'technologies.html',
-    projects: 'projects.html',
-    talkToMe: 'talkToMe.html',
+    tools: 'tools.html',
+    code: 'code.html',
+    contact: 'contact.html',
     settings: 'settings.html'
 };
 
