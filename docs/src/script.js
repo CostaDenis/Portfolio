@@ -32,7 +32,7 @@ document.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
     const main_content = document.getElementById("main-content");
 
-    fetch("home.html")
+    fetch("personal.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro ao carregar: ${response.status}`);
