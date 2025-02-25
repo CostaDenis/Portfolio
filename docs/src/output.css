@@ -634,15 +634,6 @@ video {
   margin: 0px;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -665,6 +656,14 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-8 {
@@ -747,8 +746,8 @@ video {
   width: 100%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.max-w-\[95\%\] {
+  max-width: 95%;
 }
 
 .flex-1 {
@@ -832,6 +831,10 @@ video {
   gap: 0.5rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -884,6 +887,11 @@ video {
   border-top-color: transparent;
 }
 
+.bg-darkVS-BackgroundBash {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .bg-darkVS-ColorSecundary {
   background-color: var(--ColorSecundary);
 }
@@ -919,11 +927,6 @@ video {
 
 .bg-darkVS-bg {
   background-color: var(--bg);
-}
-
-.bg-darkVS-BackgroundBash {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .p-0 {
@@ -971,6 +974,10 @@ video {
   padding-top: 4rem;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -990,6 +997,11 @@ video {
   line-height: 1;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1005,17 +1017,16 @@ video {
   line-height: 1rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .leading-none {
@@ -1028,6 +1039,11 @@ video {
 
 .text-darkVS-MenuHamburguerText {
   color: var(--MenuHamburguerText);
+}
+
+.text-darkVS-TextBash {
+  --tw-text-opacity: 1;
+  color: rgb(0 219 0 / var(--tw-text-opacity, 1));
 }
 
 .text-darkVS-TextColor {
@@ -1046,6 +1062,11 @@ video {
   color: var(--TextColorStatusBar);
 }
 
+.text-darkVS-TextHeaderBash {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .text-inherit {
   color: inherit;
 }
@@ -1055,14 +1076,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-darkVS-TextHeaderBash {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-darkVS-TextBash {
-  --tw-text-opacity: 1;
-  color: rgb(0 219 0 / var(--tw-text-opacity, 1));
+.underline {
+  text-decoration-line: underline;
 }
 
 .opacity-0 {
@@ -1203,14 +1218,14 @@ video {
     line-height: 1;
   }
 
-  .sm\:text-xl {
-    font-size: 1.25rem;
+  .sm\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1246,11 +1261,21 @@ video {
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:w-52 {
     width: 13rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-3xl {
