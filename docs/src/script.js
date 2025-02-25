@@ -70,11 +70,58 @@ async function loadPage(page) {
         if (response.ok) {
             const content = await response.text();
             mainContent.innerHTML = content;
+
+            document.querySelectorAll('.menu-div').forEach(div => {
+                div.classList.remove('border-l-2', 'border-darkVS-MenuLeftSelect');
+
+                const img = div.querySelector('img');
+                if (img) {
+                    img.src = img.src.replace('Hover', '');
+                }
+            });
+
+            let menuDiv;
+            switch (page) {
+                case 'home.html':
+                    menuDiv = document.querySelector('.menu-div[data-section="home"]');
+                    break;
+
+                case 'personal.html':
+                    menuDiv = document.querySelector('.menu-div[data-section="personal"]');
+                    break;
+
+                case 'tools.html':
+                    menuDiv = document.querySelector('.menu-div[data-section="tools"]');
+                    break;
+
+                case 'code.html':
+                    menuDiv = document.querySelector('.menu-div[data-section="code"]');
+                    break;
+
+                case 'contact.html':
+                    menuDiv = document.querySelector('.menu-div[data-section="contact"]');
+                    break;
+
+                case 'settings.html':
+                    menuDiv = document.querySelector('.menu-div[data-section="settings"]');
+                    break;
+            }
+
+            SetBorder(menuDiv);
+
         } else {
             mainContent.innerHTML = `<p>Erro ao carregar: ${response.status}</p>`;
         }
     } catch (error) {
         mainContent.innerHTML = `<p>Erro ao carregar: ${error.message}</p>`;
+    }
+}
+
+function SetBorder(div) {
+    div.classList.add('border-l-2', 'border-darkVS-MenuLeftSelect');
+    const selectedImg = div.querySelector('img');
+    if (selectedImg) {
+        selectedImg.src = selectedImg.src.replace('.svg', 'Hover.svg');
     }
 }
 
@@ -193,7 +240,7 @@ function applyTheme(theme) {
             '--TabActive': '#282a36',
             '--MenuLeft': '#343746',
             '--MenuLeftSelect': '#9e5b8b',
-            '--SpanMenu': '#282a36z',
+            '--SpanMenu': '#282a36',
             '--TextColorSpanMenu': '#f8f8f2',
             '--Explorer': '#21222c',
             '--TextColor': '#d6d6d3',
@@ -295,5 +342,3 @@ window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('selectedTheme') || 'darkVS';
     applyTheme(savedTheme);
 });
-
-
