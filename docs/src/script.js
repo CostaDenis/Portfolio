@@ -196,7 +196,9 @@ function applyTheme(theme) {
             '--TextColor': '#d4d4d4',
             '--ColorSecundary': '#499cd6',
             '--StatusBar': '#087ccc',
-            '--TextColorStatusBar': '#ffffff'
+            '--TextColorStatusBar': '#ffffff',
+            '--ColorBorderRM': '#3d444d',
+            '--ColorTextRM': '#f0f6fc'
         },
         oneDark: {
             '--bg': '#282c34',
@@ -221,7 +223,9 @@ function applyTheme(theme) {
             '--TextColor': '#e06c75',
             '--ColorSecundary': '#c678dd',
             '--StatusBar': '#21252b',
-            '--TextColorStatusBar': '#9da5b4'
+            '--TextColorStatusBar': '#9da5b4',
+            '--ColorBorderRM': '#3d444d',
+            '--ColorTextRM': '#f0f6fc'
         },
         dracula: {
             '--bg': '#282a36',
@@ -246,7 +250,9 @@ function applyTheme(theme) {
             '--TextColor': '#d6d6d3',
             '--ColorSecundary': '#9e5b8b',
             '--StatusBar': '#191a21',
-            '--TextColorStatusBar': '#f8f8f2'
+            '--TextColorStatusBar': '#f8f8f2',
+            '--ColorBorderRM': '#3d444d',
+            '--ColorTextRM': '#f0f6fc'
         },
         monokaiLight: {
             '--bg': '#fafafa',
@@ -271,7 +277,9 @@ function applyTheme(theme) {
             '--TextColor': '#333333',
             '--ColorSecundary': '#0089b3',
             '--StatusBar': '#007acc',
-            '--TextColorStatusBar': '#ffffff'
+            '--TextColorStatusBar': '#ffffff',
+            '--ColorBorderRM': '#d1d9e0',
+            '--ColorTextRM': '#1f2328'
         },
         winterComing: {
             '--bg': '#ffffff',
@@ -296,7 +304,9 @@ function applyTheme(theme) {
             '--TextColor': '#c792ea',
             '--ColorSecundary': '#0991b6',
             '--StatusBar': '#2f86d2',
-            '--TextColorStatusBar': '#ffffff'
+            '--TextColorStatusBar': '#ffffff',
+            '--ColorBorderRM': '#d1d9e0',
+            '--ColorTextRM': '#1f2328'
         },
         quietLight: {
             '--bg': '#f5f5f5',
@@ -321,7 +331,9 @@ function applyTheme(theme) {
             '--TextColor': '#7a3e9d',
             '--ColorSecundary': '#8e3e9d',
             '--StatusBar': '#705697',
-            '--TextColorStatusBar': '#ffffff'
+            '--TextColorStatusBar': '#ffffff',
+            '--ColorBorderRM': '#d1d9e0',
+            '--ColorTextRM': '#1f2328'
         },
     };
 

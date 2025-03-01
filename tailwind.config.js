@@ -30,11 +30,8 @@ module.exports = {
           ColorSecundary: 'var(--ColorSecundary)',
           StatusBar: 'var(--StatusBar)',
           TextColorStatusBar: 'var(--TextColorStatusBar)',
-
-          HeaderBash: '#2e1a1a',
-          TextHeaderBash: '#ffffff',
-          TextBash: '#00db00',
-          BackgroundBash: '#000000'
+          ColorBorderRM: 'var(--ColorBorderRM)',
+          ColorTextRM: 'var(--ColorTextRM)',
         },
       },
       width: {
