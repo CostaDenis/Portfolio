@@ -32,7 +32,7 @@ document.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
     const main_content = document.getElementById("main-content");
 
-    fetch("personal.html")
+    fetch("home.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro ao carregar: ${response.status}`);
@@ -72,12 +72,7 @@ async function loadPage(page) {
             mainContent.innerHTML = content;
 
             document.querySelectorAll('.menu-div').forEach(div => {
-                div.classList.remove('border-l-2', 'border-darkVS-MenuLeftSelect');
-
-                const img = div.querySelector('img');
-                if (img) {
-                    img.src = img.src.replace('Hover', '');
-                }
+                ClearBorder(div);
             });
 
             let menuDiv;
@@ -125,6 +120,14 @@ function SetBorder(div) {
     }
 }
 
+function ClearBorder(div) {
+    div.classList.remove('border-l-2', 'border-darkVS-MenuLeftSelect');
+    const img = div.querySelector('img');
+    if (img) {
+        img.src = img.src.replace('Hover', '');
+    }
+}
+
 
 document.querySelectorAll('.menu-div').forEach(menuDiv => {
     menuDiv.addEventListener('click', async () => {
@@ -157,6 +160,9 @@ document.querySelectorAll('.menu-div').forEach(menuDiv => {
                         selectedImg.src = selectedImg.src.replace('.svg', 'Hover.svg');
                     }
 
+                    localStorage.getItem('selectedPage') || 'home.html';
+                    localStorage.setItem('selectedPage', sectionFile);
+
                 } else {
                     mainContent.innerHTML = `<p>Erro ao carregar: ${response.status}</p>`;
                 }
@@ -169,6 +175,30 @@ document.querySelectorAll('.menu-div').forEach(menuDiv => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', async () => {
+    const lastPage = localStorage.getItem('selectedPage') || 'home.html';
+
+    try {
+        const response = await fetch(lastPage);
+        if (response.ok) {
+            const content = await response.text();
+            mainContent.innerHTML = content;
+
+
+            document.querySelectorAll('.menu-div').forEach(div => {
+                ClearBorder(div);
+            });
+
+            SetBorder(document.querySelector(`.menu-div[data-section="${lastPage.replace('.html', '')}"]`));
+
+        } else {
+            mainContent.innerHTML = `<p>Erro ao carregar: ${response.status}</p>`;
+        }
+    } catch (error) {
+        mainContent.innerHTML = `<p>Erro ao carregar: ${error.message}</p>`;
+    }
+});
+
 function applyTheme(theme) {
     const html = document.documentElement;
 
@@ -178,11 +208,11 @@ function applyTheme(theme) {
             '--MenuTop': '#403c3c',
             '--MenuTopHover': '#484444',
             '--TextColorMenuTop': '#bfbfbf',
-            '--MenuHamburguer': '#282424',
+            '--MenuHamburguer': '#252526',
             '--MenuHamburguerHover': '#087cd4',
             '--MenuHamburguerText': '#cccccc',
             '--MenuHamburguerHoverText': '#d1f3fb',
-            '--Window': '#282424',
+            '--Window': '#252526',
             '--WindowBorder': '#1e1e1e',
             '--TextTabActive': '#ffdca8',
             '--TextTabInctive': '#96866d',
@@ -192,7 +222,8 @@ function applyTheme(theme) {
             '--MenuLeftSelect': '#ffffff',
             '--SpanMenu': '#252526',
             '--TextColorSpanMenu': '#b8b8b8',
-            '--Explorer': '#282424',
+            '--Explorer': '#252526',
+            '--ExplorerTextColor': '#cccccc',
             '--TextColor': '#d4d4d4',
             '--ColorSecundary': '#499cd6',
             '--StatusBar': '#087ccc',
@@ -220,6 +251,7 @@ function applyTheme(theme) {
             '--SpanMenu': '#21252b',
             '--TextColorSpanMenu': '#b7b8b8',
             '--Explorer': '#21252b',
+            '--ExplorerTextColor': '#cccccc',
             '--TextColor': '#e06c75',
             '--ColorSecundary': '#c678dd',
             '--StatusBar': '#21252b',
@@ -247,6 +279,7 @@ function applyTheme(theme) {
             '--SpanMenu': '#282a36',
             '--TextColorSpanMenu': '#f8f8f2',
             '--Explorer': '#21222c',
+            '--ExplorerTextColor': '#f8f8f2',
             '--TextColor': '#d6d6d3',
             '--ColorSecundary': '#9e5b8b',
             '--StatusBar': '#191a21',
@@ -274,6 +307,7 @@ function applyTheme(theme) {
             '--SpanMenu': '#f3f3f3',
             '--TextColorSpanMenu': '#616161',
             '--Explorer': '#f3f3f3',
+            '--ExplorerTextColor': '#616161',
             '--TextColor': '#333333',
             '--ColorSecundary': '#0089b3',
             '--StatusBar': '#007acc',
@@ -301,6 +335,7 @@ function applyTheme(theme) {
             '--SpanMenu': '#ffffff',
             '--TextColorSpanMenu': '#111111',
             '--Explorer': '#f3f3f3',
+            '--ExplorerTextColor': '#3b5b81',
             '--TextColor': '#c792ea',
             '--ColorSecundary': '#0991b6',
             '--StatusBar': '#2f86d2',
@@ -328,6 +363,7 @@ function applyTheme(theme) {
             '--SpanMenu': '#f3f3f3',
             '--TextColorSpanMenu': '#616161',
             '--Explorer': '#f2f2f2',
+            '--ExplorerTextColor': '#616161',
             '--TextColor': '#7a3e9d',
             '--ColorSecundary': '#8e3e9d',
             '--StatusBar': '#705697',

@@ -6,26 +6,27 @@ module.exports = {
     extend: {
       colors: {
         darkVS: {
-          bg: 'var(--bg)', //
-          MenuTop: 'var(--MenuTop)', //
-          MenuTopHover: 'var(--MenuTopHover)', //
-          TextColorMenuTop: 'var(--TextColorMenuTop)',//
-          MenuHamburguer: 'var(--MenuHamburguer)',//
-          MenuHamburguerHover: 'var(--MenuHamburguerHover)',//
-          MenuHamburguerText: 'var(--MenuHamburguerText)',//
-          MenuHamburguerHoverText: 'var(--MenuHamburguerHoverText)',//
-          MenuTopHover: 'var(--MenuTopHover)',//
-          Window: 'var(--Window)', //Implementar
+          bg: 'var(--bg)',
+          MenuTop: 'var(--MenuTop)',
+          MenuTopHover: 'var(--MenuTopHover)',
+          TextColorMenuTop: 'var(--TextColorMenuTop)',
+          MenuHamburguer: 'var(--MenuHamburguer)',
+          MenuHamburguerHover: 'var(--MenuHamburguerHover)',
+          MenuHamburguerText: 'var(--MenuHamburguerText)',
+          MenuHamburguerHoverText: 'var(--MenuHamburguerHoverText)',
+          MenuTopHover: 'var(--MenuTopHover)',
+          Window: 'var(--Window)',
           WindowBorder: 'var(--WindowBorder)', //Implementar
           TextTabActive: 'var(--TextTabActive)', //Implementar
           TextTabInactive: 'var(--TextTabInactive)', //Implementar
           TabInactive: 'var(--TabInactive)', //Implementar
           TabActive: 'var(--TabActive)', //Implementar
-          MenuLeft: 'var(--MenuLeft)',//
-          MenuLeftSelect: 'var(--MenuLeftSelect)', //Implementar
-          SpanMenu: 'var(--SpanMenu)',//
-          TextColorSpanMenu: 'var(--TextColorSpanMenu)',//
-          Explorer: 'var(--Explorer)', //Implementar
+          MenuLeft: 'var(--MenuLeft)',
+          MenuLeftSelect: 'var(--MenuLeftSelect)',
+          SpanMenu: 'var(--SpanMenu)',
+          TextColorSpanMenu: 'var(--TextColorSpanMenu)',
+          Explorer: 'var(--Explorer)',
+          ExplorerTextColor: 'var(--ExplorerTextColor)',
           TextColor: 'var(--TextColor)',
           ColorSecundary: 'var(--ColorSecundary)',
           StatusBar: 'var(--StatusBar)',
