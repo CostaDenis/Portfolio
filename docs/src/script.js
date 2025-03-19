@@ -32,7 +32,7 @@ document.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
     const main_content = document.getElementById("main-content");
 
-    fetch("home.html")
+    fetch("code.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro ao carregar: ${response.status}`);
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const section = {
     home: 'home.html',
-    personal: 'personal.html',
+    certificate: 'certificate.html',
     tools: 'tools.html',
     code: 'code.html',
     contact: 'contact.html',
@@ -81,16 +81,12 @@ async function loadPage(page) {
                     menuDiv = document.querySelector('.menu-div[data-section="home"]');
                     break;
 
-                case 'personal.html':
-                    menuDiv = document.querySelector('.menu-div[data-section="personal"]');
-                    break;
-
-                case 'tools.html':
-                    menuDiv = document.querySelector('.menu-div[data-section="tools"]');
-                    break;
-
                 case 'code.html':
                     menuDiv = document.querySelector('.menu-div[data-section="code"]');
+                    break;
+
+                case 'certificate.html':
+                    menuDiv = document.querySelector('.menu-div[data-section="certificate"]');
                     break;
 
                 case 'contact.html':
