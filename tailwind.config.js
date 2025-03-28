@@ -31,6 +31,8 @@ module.exports = {
           ColorSecundary: 'var(--ColorSecundary)',
           StatusBar: 'var(--StatusBar)',
           TextColorStatusBar: 'var(--TextColorStatusBar)',
+          ButtonColor: 'var(--ButtonColor)',
+          TextColorButton: 'var(--TextColorButton)',
           ColorBorderRM: 'var(--ColorBorderRM)',
           ColorTextRM: 'var(--ColorTextRM)',
         },

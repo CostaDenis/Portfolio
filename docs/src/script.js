@@ -224,6 +224,8 @@ function applyTheme(theme) {
             '--ColorSecundary': '#499cd6',
             '--StatusBar': '#087ccc',
             '--TextColorStatusBar': '#ffffff',
+            '--ButtonColor': '#16825d',
+            '--TextColorButton': '#ecf5f2',
             '--ColorBorderRM': '#3d444d',
             '--ColorTextRM': '#f0f6fc'
         },
@@ -252,6 +254,8 @@ function applyTheme(theme) {
             '--ColorSecundary': '#c678dd',
             '--StatusBar': '#21252b',
             '--TextColorStatusBar': '#9da5b4',
+            '--ButtonColor': '#528bff',
+            '--TextColorButton': '#c8d0e4',
             '--ColorBorderRM': '#3d444d',
             '--ColorTextRM': '#f0f6fc'
         },
@@ -280,6 +284,8 @@ function applyTheme(theme) {
             '--ColorSecundary': '#9e5b8b',
             '--StatusBar': '#191a21',
             '--TextColorStatusBar': '#f8f8f2',
+            '--ButtonColor': '#bd93f9',
+            '--TextColorButton': '#544970',
             '--ColorBorderRM': '#3d444d',
             '--ColorTextRM': '#f0f6fc'
         },
@@ -308,6 +314,8 @@ function applyTheme(theme) {
             '--ColorSecundary': '#0089b3',
             '--StatusBar': '#007acc',
             '--TextColorStatusBar': '#ffffff',
+            '--ButtonColor': '#007acc',
+            '--TextColorButton': '#eaf4fb',
             '--ColorBorderRM': '#d1d9e0',
             '--ColorTextRM': '#1f2328'
         },
@@ -336,6 +344,8 @@ function applyTheme(theme) {
             '--ColorSecundary': '#0991b6',
             '--StatusBar': '#2f86d2',
             '--TextColorStatusBar': '#ffffff',
+            '--ButtonColor': '#219fd5',
+            '--TextColorButton': '#e9f6fb',
             '--ColorBorderRM': '#d1d9e0',
             '--ColorTextRM': '#1f2328'
         },
@@ -364,6 +374,8 @@ function applyTheme(theme) {
             '--ColorSecundary': '#8e3e9d',
             '--StatusBar': '#705697',
             '--TextColorStatusBar': '#ffffff',
+            '--ButtonColor': '#4e3c69',
+            '--TextColorButton': '#eeecf0',
             '--ColorBorderRM': '#d1d9e0',
             '--ColorTextRM': '#1f2328'
         },
