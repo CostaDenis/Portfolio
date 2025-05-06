@@ -205,6 +205,44 @@
             </div>
         </div>
 
+
+
+        <div class="relative w-auto max-w-[80%] mt-6 sm:mt-8">
+
+            <div class="max-h-[100%] h-[24rem] md:h-[26rem] group flex flex-col bg-darkVS-MenuTop w-auto rounded-md justify-center items-center mb-4 sm:mb-6 md:mb-8 lg:mb-10
+            py-2 sm:py-4 md:py-6 px-2 sm:px-4 md:px-6 transition-transform duration-500 hover:scale-105">
+
+                <h2
+                    class="text-sm sm:text-base md:text-lg lg:text-xl text-darkVS-ColorSecundary font-bold mb-1 sm:mb-2">
+                    Fundamentos do Blazor Server
+                </h2>
+                <img class="max-w-full max-h-full w-auto h-60 mb-1 object-contain"
+                    src="imgs/certificate/Fundamentos_Blazor_Server.svg"
+                    alt="Acesso à dados com Dotnet, C# e SQL Server">
+
+                <div class="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 mb-2 mt-2 justify-items-center">
+                    <img class="w-auto h-8" src="imgs/code/stack/dotnet.svg" alt="Dotnet">
+                    <img class="w-auto h-8" src="imgs/code/stack/csharp.svg" alt="C#">
+                    <img class="w-auto h-8" src="imgs/code/stack/blazor.svg" alt="Blazor">
+                </div>
+
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-1 mt-1">
+
+                    <button onclick="document.getElementById('modalBlazorServer').showModal()" class="bg-darkVS-ButtonColor text-darkVS-TextColorButton 
+                    font-bold text-sm sm:text-base md:text-lg rounded-lg px-4 lg:px-2 py-3 lg:py-2 
+                    flex items-center gap-1 md:gap-2 whitespace-nowrap">
+                        <img class="h-4 sm:h-6 w-auto" src="imgs/certificate/buttons/Eye.svg" alt="Abrir imagem">
+                        Ver certificado
+                    </button>
+
+                </div>
+
+                <div
+                    class="absolute bottom-0 left-0 h-1 bg-darkVS-ColorSecundary w-0 group-hover:w-full transition-all duration-500">
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <dialog id="modalADS"
@@ -250,6 +288,15 @@
                 class="text-darkVS-ColorSecundary font-bold text-xl">X</button>
         </div>
         <img src="imgs/certificate/Acesso_a_dados.svg" alt="Certificado C#" class="w-full h-auto rounded-lg">
+    </dialog>
+
+    <dialog id="modalBlazorServer"
+        class="rounded-xl p-4 bg-darkVS-MenuLeft max-w-3xl w-[90%] shadow-xl backdrop:backdrop-blur-sm">
+        <div class="flex justify-end">
+            <button onclick="document.getElementById('modalBlazorServer').close()"
+                class="text-darkVS-ColorSecundary font-bold text-xl">X</button>
+        </div>
+        <img src="imgs/certificate/Fundamentos_Blazor_Server.svg" alt="Certificado C#" class="w-full h-auto rounded-lg">
     </dialog>
 
 

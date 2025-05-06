@@ -622,10 +622,6 @@ video {
   z-index: 10;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .z-40 {
   z-index: 40;
 }
@@ -658,12 +654,20 @@ video {
   margin-bottom: 1rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .mt-1 {
@@ -760,10 +764,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[26rem\] {
-  height: 26rem;
 }
 
 .max-h-\[100\%\] {
@@ -980,6 +980,10 @@ video {
   border-width: 0.50px;
 }
 
+.border-\[0\.5px\] {
+  border-width: 0.5px;
+}
+
 .border-b-4 {
   border-bottom-width: 4px;
 }
@@ -1052,10 +1056,6 @@ video {
   background-color: var(--StatusBar);
 }
 
-.bg-darkVS-Window {
-  background-color: var(--Window);
-}
-
 .bg-darkVS-bg {
   background-color: var(--bg);
 }
@@ -1079,11 +1079,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -1116,12 +1111,17 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1171,12 +1171,24 @@ video {
   line-height: 1;
 }
 
+.text-darkVS-BracketColor {
+  color: var(--BracketColor);
+}
+
 .text-darkVS-ColorSecundary {
   color: var(--ColorSecundary);
 }
 
 .text-darkVS-ColorTextRM {
   color: var(--ColorTextRM);
+}
+
+.text-darkVS-CommaColor {
+  color: var(--CommaColor);
+}
+
+.text-darkVS-KeyColor {
+  color: var(--KeyColor);
 }
 
 .text-darkVS-MenuHamburguerText {
@@ -1201,6 +1213,10 @@ video {
 
 .text-darkVS-TextColorStatusBar {
   color: var(--TextColorStatusBar);
+}
+
+.text-darkVS-ValueColor {
+  color: var(--ValueColor);
 }
 
 .text-inherit {
@@ -1279,10 +1295,6 @@ video {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-darkVS-ColorSecundary:hover {
-  background-color: var(--ColorSecundary);
 }
 
 .hover\:text-darkVS-ColorSecundary:hover {
@@ -1368,10 +1380,6 @@ video {
 
   .sm\:h-screen {
     height: 100vh;
-  }
-
-  .sm\:h-10 {
-    height: 2.5rem;
   }
 
   .sm\:max-h-\[100\%\] {
@@ -1460,13 +1468,18 @@ video {
     padding-bottom: 1rem;
   }
 
-  .sm\:pt-20 {
-    padding-top: 5rem;
+  .sm\:pt-14 {
+    padding-top: 3.5rem;
   }
 
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-base {
@@ -1516,10 +1529,6 @@ video {
 
   .md\:h-\[32rem\] {
     height: 32rem;
-  }
-
-  .md\:h-\[28rem\] {
-    height: 28rem;
   }
 
   .md\:w-54 {
@@ -1639,6 +1648,11 @@ video {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-6xl {

@@ -14,19 +14,10 @@ module.exports = {
           MenuHamburguerHover: 'var(--MenuHamburguerHover)',
           MenuHamburguerText: 'var(--MenuHamburguerText)',
           MenuHamburguerHoverText: 'var(--MenuHamburguerHoverText)',
-          MenuTopHover: 'var(--MenuTopHover)',
-          Window: 'var(--Window)',
-          WindowBorder: 'var(--WindowBorder)', //Implementar
-          TextTabActive: 'var(--TextTabActive)', //Implementar
-          TextTabInactive: 'var(--TextTabInactive)', //Implementar
-          TabInactive: 'var(--TabInactive)', //Implementar
-          TabActive: 'var(--TabActive)', //Implementar
           MenuLeft: 'var(--MenuLeft)',
           MenuLeftSelect: 'var(--MenuLeftSelect)',
           SpanMenu: 'var(--SpanMenu)',
           TextColorSpanMenu: 'var(--TextColorSpanMenu)',
-          Explorer: 'var(--Explorer)',
-          ExplorerTextColor: 'var(--ExplorerTextColor)',
           TextColor: 'var(--TextColor)',
           ColorSecundary: 'var(--ColorSecundary)',
           StatusBar: 'var(--StatusBar)',
@@ -35,6 +26,10 @@ module.exports = {
           TextColorButton: 'var(--TextColorButton)',
           ColorBorderRM: 'var(--ColorBorderRM)',
           ColorTextRM: 'var(--ColorTextRM)',
+          BracketColor: 'var(--BracketColor)',
+          KeyColor: 'var(--KeyColor)',
+          ValueColor: 'var(--ValueColor)',
+          CommaColor: 'var(--CommaColor)'
         },
       },
       width: {

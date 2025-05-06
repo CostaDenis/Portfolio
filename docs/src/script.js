@@ -29,30 +29,6 @@ document.addEventListener("click", (event) => {
     }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const main_content = document.getElementById("main-content");
-
-    fetch("code.html")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Erro ao carregar: ${response.status}`);
-            }
-            return response.text();
-        })
-
-        .then(data => {
-            main_content.innerHTML = data;
-            document.querySelector('.menu-div').classList.add('border-l-2', 'border-darkVS-MenuLeftSelect');
-            document.querySelector('.menu-div img').src = 'imgs/menu/homeHover.svg';
-        })
-
-        .catch(error => {
-            console.error("Erro ao carregar o conteúdo:", error);
-            mainContent.innerHTML = "<p>Erro ao carregar o conteúdo.</p>";
-        });
-});
-
-
 const section = {
     home: 'home.html',
     certificate: 'certificate.html',
@@ -208,18 +184,10 @@ function applyTheme(theme) {
             '--MenuHamburguerHover': '#087cd4',
             '--MenuHamburguerText': '#cccccc',
             '--MenuHamburguerHoverText': '#d1f3fb',
-            '--Window': '#252526',
-            '--WindowBorder': '#1e1e1e',
-            '--TextTabActive': '#ffdca8',
-            '--TextTabInctive': '#96866d',
-            '--TabInactive': '#2d2d2d',
-            '--TabActive': '#1e1e1e',
             '--MenuLeft': '#383434',
             '--MenuLeftSelect': '#ffffff',
             '--SpanMenu': '#252526',
             '--TextColorSpanMenu': '#b8b8b8',
-            '--Explorer': '#252526',
-            '--ExplorerTextColor': '#cccccc',
             '--TextColor': '#d4d4d4',
             '--ColorSecundary': '#499cd6',
             '--StatusBar': '#087ccc',
@@ -227,7 +195,11 @@ function applyTheme(theme) {
             '--ButtonColor': '#16825d',
             '--TextColorButton': '#ecf5f2',
             '--ColorBorderRM': '#3d444d',
-            '--ColorTextRM': '#f0f6fc'
+            '--ColorTextRM': '#f0f6fc',
+            '--BracketColor': '#ffd700',
+            '--KeyColor': '#7bdcfe',
+            '--ValueColor': '#ce9178',
+            '--CommaColor': '#c8d4d4'
         },
         oneDark: {
             '--bg': '#282c34',
@@ -238,18 +210,10 @@ function applyTheme(theme) {
             '--MenuHamburguerHover': '#2c313a',
             '--MenuHamburguerText': '#ececed',
             '--MenuHamburguerHoverText': '#c2c5cb',
-            '--Window': '#21252b',
-            '--WindowBorder': '#21252b',
-            '--TextTabActive': '#abacad',
-            '--TextTabInctive': '#777f80',
-            '--TabInactive': '#21252b',
-            '--TabActive': '#282c34',
             '--MenuLeft': '#333842',
             '--MenuLeftSelect': '#d7dae0',
             '--SpanMenu': '#21252b',
             '--TextColorSpanMenu': '#b7b8b8',
-            '--Explorer': '#21252b',
-            '--ExplorerTextColor': '#cccccc',
             '--TextColor': '#e06c75',
             '--ColorSecundary': '#c678dd',
             '--StatusBar': '#21252b',
@@ -257,7 +221,11 @@ function applyTheme(theme) {
             '--ButtonColor': '#528bff',
             '--TextColorButton': '#c8d0e4',
             '--ColorBorderRM': '#3d444d',
-            '--ColorTextRM': '#f0f6fc'
+            '--ColorTextRM': '#f0f6fc',
+            '--BracketColor': '#ffd700',
+            '--KeyColor': '#e06c60',
+            '--ValueColor': '#98c379',
+            '--CommaColor': '#9fb2bf'
         },
         dracula: {
             '--bg': '#282a36',
@@ -268,18 +236,10 @@ function applyTheme(theme) {
             '--MenuHamburguerHover': '#373a49',
             '--MenuHamburguerText': '#f0f0eb',
             '--MenuHamburguerHoverText': '#e1f0da',
-            '--Window': '#201c24',
-            '--WindowBorder': '#94527e',
-            '--TextTabActive': '#c2ebf2',
-            '--TextTabInctive': '#4065a4',
-            '--TabInactive': '#21222c',
-            '--TabActive': '#282a36',
             '--MenuLeft': '#343746',
             '--MenuLeftSelect': '#9e5b8b',
             '--SpanMenu': '#282a36',
             '--TextColorSpanMenu': '#f8f8f2',
-            '--Explorer': '#21222c',
-            '--ExplorerTextColor': '#f8f8f2',
             '--TextColor': '#d6d6d3',
             '--ColorSecundary': '#9e5b8b',
             '--StatusBar': '#191a21',
@@ -287,7 +247,11 @@ function applyTheme(theme) {
             '--ButtonColor': '#bd93f9',
             '--TextColorButton': '#544970',
             '--ColorBorderRM': '#3d444d',
-            '--ColorTextRM': '#f0f6fc'
+            '--ColorTextRM': '#f0f6fc',
+            '--BracketColor': '#f8f8f2',
+            '--KeyColor': '#8be9fd',
+            '--ValueColor': '#f1fa8c',
+            '--CommaColor': '#ebf8f2'
         },
         monokaiLight: {
             '--bg': '#fafafa',
@@ -298,18 +262,10 @@ function applyTheme(theme) {
             '--MenuHamburguerHover': '#0060c0',
             '--MenuHamburguerText': '#828282',
             '--MenuHamburguerHoverText': '#e0f8fe',
-            '--Window': '#f3f3f3',
-            '--WindowBorder': '#f3f3f3',
-            '--TextTabActive': '#333333',
-            '--TextTabInctive': '#6a6a6a',
-            '--TabInactive': '#ececec',
-            '--TabActive': '#fafafa',
             '--MenuLeft': '#2c2c2c',
             '--MenuLeftSelect': '#ffffff',
             '--SpanMenu': '#f3f3f3',
             '--TextColorSpanMenu': '#616161',
-            '--Explorer': '#f3f3f3',
-            '--ExplorerTextColor': '#616161',
             '--TextColor': '#333333',
             '--ColorSecundary': '#0089b3',
             '--StatusBar': '#007acc',
@@ -317,7 +273,11 @@ function applyTheme(theme) {
             '--ButtonColor': '#007acc',
             '--TextColorButton': '#eaf4fb',
             '--ColorBorderRM': '#d1d9e0',
-            '--ColorTextRM': '#1f2328'
+            '--ColorTextRM': '#1f2328',
+            '--BracketColor': '#0431fa',
+            '--KeyColor': '#0089b3',
+            '--ValueColor': '#998f2f',
+            '--CommaColor': '#6d3333'
         },
         winterComing: {
             '--bg': '#ffffff',
@@ -328,18 +288,10 @@ function applyTheme(theme) {
             '--MenuHamburguerHover': '#219fd5',
             '--MenuHamburguerText': '#225ea8',
             '--MenuHamburguerHoverText': '#fff0ef',
-            '--Window': '#ffffff',
-            '--WindowBorder': '#ffffff',
-            '--TextTabActive': '#333333',
-            '--TextTabInctive': '#906a90',
-            '--TabInactive': '#ececec',
-            '--TabActive': '#ffffff',
             '--MenuLeft': '#2c2c2c',
             '--MenuLeftSelect': '#99d0f7',
             '--SpanMenu': '#ffffff',
             '--TextColorSpanMenu': '#111111',
-            '--Explorer': '#f3f3f3',
-            '--ExplorerTextColor': '#3b5b81',
             '--TextColor': '#c792ea',
             '--ColorSecundary': '#0991b6',
             '--StatusBar': '#2f86d2',
@@ -347,7 +299,11 @@ function applyTheme(theme) {
             '--ButtonColor': '#219fd5',
             '--TextColorButton': '#e9f6fb',
             '--ColorBorderRM': '#d1d9e0',
-            '--ColorTextRM': '#1f2328'
+            '--ColorTextRM': '#1f2328',
+            '--BracketColor': '#0431fb',
+            '--KeyColor': '#3a9685',
+            '--ValueColor': '#8123a9',
+            '--CommaColor': '#ca92ea'
         },
         quietLight: {
             '--bg': '#f5f5f5',
@@ -358,18 +314,10 @@ function applyTheme(theme) {
             '--MenuHamburguerHover': '#c4d9b1',
             '--MenuHamburguerText': '#616161',
             '--MenuHamburguerHoverText': '#737471',
-            '--Window': '#f3f3f3',
-            '--WindowBorder': '#f3f3f3',
-            '--TextTabActive': '#333333',
-            '--TextTabInctive': '#6a6aa5',
-            '--TabInactive': '#ececec',
-            '--TabActive': '#f5f5f5',
             '--MenuLeft': '#ededf5',
             '--MenuLeftSelect': '#705697',
             '--SpanMenu': '#f3f3f3',
             '--TextColorSpanMenu': '#616161',
-            '--Explorer': '#f2f2f2',
-            '--ExplorerTextColor': '#616161',
             '--TextColor': '#7a3e9d',
             '--ColorSecundary': '#8e3e9d',
             '--StatusBar': '#705697',
@@ -377,7 +325,11 @@ function applyTheme(theme) {
             '--ButtonColor': '#4e3c69',
             '--TextColorButton': '#eeecf0',
             '--ColorBorderRM': '#d1d9e0',
-            '--ColorTextRM': '#1f2328'
+            '--ColorTextRM': '#1f2328',
+            '--BracketColor': '#0431fa',
+            '--KeyColor': '#9c5d27',
+            '--ValueColor': '#448c27',
+            '--CommaColor': '#8b7777'
         },
     };
 
