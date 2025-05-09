@@ -29,6 +29,16 @@ document.addEventListener("click", (event) => {
     }
 });
 
+const menuItems = menuHamburger.querySelectorAll("button");
+
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        menuHamburger.classList.add("hidden");
+        menuHamburger.classList.remove("block");
+        menuButton.setAttribute("aria-expanded", "false");
+    });
+});
+
 const section = {
     home: 'home.html',
     certificate: 'certificate.html',
