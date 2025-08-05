@@ -14,11 +14,13 @@ Este projeto é o meu portfólio pessoal, desenvolvido com inspiração na inter
 
 - No projeto, foi utilizada a versão 3.4.17 do Tailwind Css.
 
-- É necessário executar pelo Visual Studio Code.
-
-- É necessário a extensão 'Live Server' dentro do Visual Studio Code.
+- Caso for testar, recomendo utilizar e extensão 'Live Server' pelo Visual Studio Code.
 
 ## Para executar localmente
+
+### Pré Requisito
+
+- Ter instalado o <a href="https://nodejs.org/pt/download">Node.js</a> na máquina 
 
 Clone o repositório:
   ```bash
