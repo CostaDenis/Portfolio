@@ -6,7 +6,7 @@
     "@tailwindcss/line-clamp": "^0.4.4"
   },
   "scripts": {
-    "watch": "tailwindcss -i ./docs/src/input.css -o ./docs/src/output.css --watch",
-    "build": "tailwindcss -i ./docs/src/input.css -o ./docs/src/output.css --build"
+    "watch": "tailwindcss -i ./docs/src/style/input.css -o ./docs/src/style/output.css --watch",
+    "build": "tailwindcss -i ./docs/src/style/input.css -o ./docs/src/style/output.css --build"
   }
 }

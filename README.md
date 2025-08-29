@@ -6,9 +6,9 @@ Este projeto é o meu portfólio pessoal, desenvolvido com inspiração na inter
 
 ## Tecnologias utilizadas
 
-![Static Badge](https://img.shields.io/badge/HTML-f16529.svg?style=for-the-badge&logo=HTML5&logoColor=ffffff)
-![Static Badge](https://img.shields.io/badge/TAILWIND_CSS-44a8b3.svg?style=for-the-badge&logo=TailwindCSS&logoColor=ffffff)
-![Static Badge](https://img.shields.io/badge/JAVASCRIPT-f7df1e.svg?style=for-the-badge&logo=JavaScript&logoColor=000000)
+![HTML5](https://img.shields.io/badge/HTML-f16529.svg?style=for-the-badge&logo=HTML5&logoColor=ffffff)
+![Tailwind CSS](https://img.shields.io/badge/TAILWIND_CSS-44a8b3.svg?style=for-the-badge&logo=TailwindCSS&logoColor=ffffff)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-f7df1e.svg?style=for-the-badge&logo=JavaScript&logoColor=000000)
 
 ## Observações
 
@@ -29,7 +29,7 @@ Clone o repositório:
 
 Para iniciar o Tailwind CSS em modo watch, execute no terminal a partir da raiz do projeto:
 ```bash
-npx tailwindcss -i ./docs/src/input.css -o ./docs/src/output.css --watch
+npm run watch
   ```
 Caso queira interromper a execução, 'CTRL + C' no terminal.
 
