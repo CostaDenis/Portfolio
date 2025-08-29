@@ -341,6 +341,74 @@
             </div>
         </div>
 
+        <div class="relative w-auto max-w-[80%] mt-6 sm:mt-8">
+
+            <div class="max-h-[100%] h-[24rem] md:h-[26rem] group flex flex-col bg-darkVS-MenuTop w-auto rounded-md justify-center items-center mb-4 sm:mb-6 md:mb-8 lg:mb-10
+            py-2 sm:py-4 md:py-6 px-2 sm:px-4 md:px-6 transition-transform duration-500 hover:scale-105">
+
+                <h2
+                    class="text-sm sm:text-base md:text-lg lg:text-xl text-darkVS-ColorSecundary font-bold mb-1 sm:mb-2">
+                    Fundamentos do ASP.NET
+                </h2>
+                <img class="max-w-full max-h-full w-auto h-60 mb-1 object-contain"
+                    src="imgs/certificate/Fundamentos_ASPNET.svg" alt="Fundamentos ASP.NET">
+
+                <div class="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 mb-2 mt-2 justify-items-center">
+                    <img class="w-auto h-8" src="imgs/code/stack/dotnet.svg" alt="Dotnet">
+                    <img class="w-auto h-8" src="imgs/code/stack/csharp.svg" alt="C#">
+                    <img class="w-auto h-8" src="imgs/code/stack/sql.svg" alt="SQL">
+                </div>
+
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-1 mt-1">
+
+                    <button onclick="document.getElementById('modalFundamentosASPNET').showModal()" class="bg-darkVS-ButtonColor text-darkVS-TextColorButton font-bold text-sm sm:text-base md:text-lg rounded-lg
+                            px-6 py-3 flex items-center justify-center gap-2 min-w-[160px] h-[48px]">
+                        <img class="h-4 sm:h-6 w-auto" src="imgs/certificate/buttons/Eye.svg" alt="Abrir imagem">
+                        Ver certificado
+                    </button>
+
+                </div>
+
+                <div
+                    class="absolute bottom-0 left-0 h-1 bg-darkVS-ColorSecundary w-0 group-hover:w-full transition-all duration-500">
+                </div>
+            </div>
+        </div>
+
+        <div class="relative w-auto max-w-[80%] mt-6 sm:mt-8">
+
+            <div class="max-h-[100%] h-[24rem] md:h-[26rem] group flex flex-col bg-darkVS-MenuTop w-auto rounded-md justify-center items-center mb-4 sm:mb-6 md:mb-8 lg:mb-10
+            py-2 sm:py-4 md:py-6 px-2 sm:px-4 md:px-6 transition-transform duration-500 hover:scale-105">
+
+                <h2
+                    class="text-sm sm:text-base md:text-lg lg:text-xl text-darkVS-ColorSecundary font-bold mb-1 sm:mb-2">
+                    Fundamentos do HTML e CSS
+                </h2>
+                <img class="max-w-full max-h-full w-auto h-60 mb-1 object-contain"
+                    src="imgs/certificate/Fundamentos_HTML_CSS.svg" alt="Fundamentos do HTML e CSS">
+
+                <div class="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8 mb-2 mt-2 justify-items-center">
+                    <img class="w-auto h-8" src="imgs/code/stack/html5.svg" alt="HTML5">
+                    <img class="w-auto h-8" src="imgs/code/stack/css3.svg" alt="CSS3">
+
+                </div>
+
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-1 mt-1">
+
+                    <button onclick="document.getElementById('modalFundamentosHTML_CSS').showModal()" class="bg-darkVS-ButtonColor text-darkVS-TextColorButton font-bold text-sm sm:text-base md:text-lg rounded-lg
+                            px-6 py-3 flex items-center justify-center gap-2 min-w-[160px] h-[48px]">
+                        <img class="h-4 sm:h-6 w-auto" src="imgs/certificate/buttons/Eye.svg" alt="Abrir imagem">
+                        Ver certificado
+                    </button>
+
+                </div>
+
+                <div
+                    class="absolute bottom-0 left-0 h-1 bg-darkVS-ColorSecundary w-0 group-hover:w-full transition-all duration-500">
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <dialog id="modalADS"
@@ -416,6 +484,26 @@
                 class="text-darkVS-ColorSecundary font-bold text-xl">X</button>
         </div>
         <img src="imgs/certificate/Fundamentos_EF.svg" alt="Fundamentos Entity Framework"
+            class="w-full h-auto rounded-lg">
+    </dialog>
+
+    <dialog id="modalFundamentosASPNET"
+        class="rounded-xl p-4 bg-darkVS-MenuLeft max-w-3xl w-[90%] shadow-xl backdrop:backdrop-blur-sm">
+        <div class="flex justify-end">
+            <button onclick="document.getElementById('modalFundamentosASPNET').close()"
+                class="text-darkVS-ColorSecundary font-bold text-xl">X</button>
+        </div>
+        <img src="imgs/certificate/Fundamentos_ASPNET.svg" alt="Fundamentos Entity Framework"
+            class="w-full h-auto rounded-lg">
+    </dialog>
+
+    <dialog id="modalFundamentosHTML_CSS"
+        class="rounded-xl p-4 bg-darkVS-MenuLeft max-w-3xl w-[90%] shadow-xl backdrop:backdrop-blur-sm">
+        <div class="flex justify-end">
+            <button onclick="document.getElementById('modalFundamentosHTML_CSS').close()"
+                class="text-darkVS-ColorSecundary font-bold text-xl">X</button>
+        </div>
+        <img src="imgs/certificate/Fundamentos_HTML_CSS.svg" alt="Fundamentos Entity Framework"
             class="w-full h-auto rounded-lg">
     </dialog>
 
