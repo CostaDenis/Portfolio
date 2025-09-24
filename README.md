@@ -1,6 +1,6 @@
 # Portfolio
 
-Este projeto é o meu portfólio pessoal, desenvolvido com inspiração na interface do Visual Studio Code. A proposta é apresentar minhas habilidades, projetos, certificados e informações profissionais em um layout que remete a um ambiente de desenvolvimento.
+Este projeto é o meu portfólio pessoal, desenvolvido com inspiração na interface do Visual Studio Code. A proposta é apresentar minhas habilidades e projetos em um layout que remete a um ambiente de desenvolvimento.
 
 ![Preview do Portfolio](image.png)
 
